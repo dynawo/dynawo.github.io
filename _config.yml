@@ -1,0 +1,17 @@
+# Except where otherwise noted, content in this website is Copyright (c)
+# 2015-2019, RTE (http://www.rte-france.com) and licensed under a
+# CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+# license. All rights reserved.
+theme: jekyll-theme-slate
+title: Dyna&omega;o
+show_downloads: false
+markdown: kramdown
+
+github:
+  repository_name: Dynawo
+  repository_url: https://github.com/dynawo/dynawo.github.io.git
+  owner_name: RTE France
+  owner_url: https://www.rte-france.com
+
+plugins:
+- jekyll-relative-links
