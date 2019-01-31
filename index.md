@@ -16,7 +16,7 @@ It is an ongoing project based on previous works conducted particularly in two R
 
 ![image](assets/images/DynawoModelSolverLight.png){: width="70%" .center-image}
 
-**Dyna&omega;o's primary focus has been on RMS simulations and most of the tests done until now have been for long-term and short-term stability studies.** However, the simulation tool structure offers great flexibility and makes it also possible to run other types of power system simulations, as long as the user provides the necessary models and solvers. Different initiatives are under discussion or submission to test the possibility to use  Dyna&omega;o for EMT simulations or multi-system simulations.
+**Dyna&omega;o's primary focus has been on RMS simulations and most of the tests done until now have been for long-term and short-term stability studies.** However, the simulation tool structure offers great flexibility and makes it also possible to run other types of power system simulations, as long as the user provides the necessary models and solvers. Different initiatives are under discussion or submission to test the possibility to use Dyna&omega;o for EMT simulations or multi-system simulations.
 
 ![image](assets/images/DynawoScope.png){: width="60%" .center-image}
 
