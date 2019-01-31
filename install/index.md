@@ -48,7 +48,7 @@ $> ./myEnvDynawo.sh build-omcDynawo
 $> ./myEnvDynawo.sh build-all
 ```
 
-**Warning**: If you're working behind a proxy make sure you have exported the following proxy environement variables
+**Warning**: If you're working behind a proxy make sure you have exported the following proxy environment variables
 ``` bash
 $> export http_proxy=
 $> export https_proxy=
