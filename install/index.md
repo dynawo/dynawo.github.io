@@ -8,6 +8,8 @@ layout: default
     CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
     license. All rights reserved.
 -->
+For the moment Dyna&omega;o has only be tested on **Linux** platforms (Centos and Debian based) and provided that you can install system packages there should be no problem on other Linux distributions. For **MacOS** and **Windows** users a [Docker](https://www.docker.com/) solution will be provided in a near future. We also plan to provide compilation compatibility for Windows. If you have any issue building Dyna&omega;o don't hesitate to send us an [email](mailto:rte-des-simulation-dynamique@rte-france.com) with your errors and we will try to answer you back quickly.
+
 Dyna&omega;o and its dependencies will need some packages to work. Here is the list of all packages you can install to have no dependency problem in the following steps. This example works for Ubuntu:
 
 ``` bash
@@ -46,6 +48,14 @@ $> ./myEnvDynawo.sh build-omcDynawo
 $> ./myEnvDynawo.sh build-all
 ```
 
+**Warning**: If you're working behind a proxy make sure you have exported the following proxy environement variables
+``` bash
+$> export http_proxy=
+$> export https_proxy=
+$> export no_proxy=localhost,127.0.0.0/8,::1
+$> export HTTP_PROXY=$http_proxy;export HTTPS_PROXY=$https_proxy;export NO_PROXY=$no_proxy;
+```
+
 Once you have installed and compiled Dyna&omega;o as explained in the previous
 part, you can launch a simulation by calling:
 
@@ -61,7 +71,7 @@ $> ls outputs
 $> diff outputs/curves/curves.csv reference/outputs/curves/curves.csv
 ```
 
-All the simulation outputs are stored into the outputs directory. 
+All the simulation outputs are stored into the outputs directory.
 
 It is also possible to display directly simulation results - plots - into a simple GUI (created for demonstration purpose) by using the following command:
 
@@ -77,4 +87,3 @@ You can obtain more informations about commands you can use by launching:
 ``` bash
 $> ./myEnvDynawo.sh help
 ```
-
