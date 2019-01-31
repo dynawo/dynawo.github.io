@@ -62,7 +62,7 @@ div
 
 header.inner
 {
-  height: 100px;
+  max-height: 100px;
 }
 
 #header_wrap .inner
@@ -98,5 +98,74 @@ aside
   padding-top: 40px;
   margin-left: 40px;
   float: left;
-  width: 320px;
+  max-width: 320px;
+}
+
+@media screen and (max-width: 1380px) {
+  aside
+  {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  #main_content.inner
+  {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #footer_wrap.outer
+  {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #header_wrap .inner
+  {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .nav-link
+  {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #footer_wrap.outer
+  {
+    height: 120px;
+  }
+
+  aside
+  {
+    padding-top: 10px;
+  }
+
+  #main_content.inner
+  {
+    padding-top: 10px;
+  }
+
+  p
+  {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #footer_wrap.outer
+  {
+    height: 120px;
+  }
 }

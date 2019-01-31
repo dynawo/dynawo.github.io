@@ -8,13 +8,13 @@ layout: default
     CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
     license. All rights reserved.
 -->
-**Dyna&omega;o is an hybrid C++/Modelica open source time domain simulation tool for power systems. It aims at providing power sytem stakeholders with a transparent, flexible, interoperable and robust simulation tool that could ease collaboration and cooperation in the power system community.**
+**Dyna&omega;o is an hybrid C++/Modelica open source time domain simulation tool for power systems. It aims at providing power system stakeholders with a transparent, flexible, interoperable and robust simulation tool that could ease collaboration and cooperation in the power system community.**
 
 To achieve this goal, **Dyna&omega;o is based on two mains principles**: the use of a high-level modelling language [Modelica](https://modelica.org/) and a strict separation between the modelling and the solving parts.
 
 It is an ongoing project based on previous works conducted particularly in two R&D European projects: [Pegase](http://www.fp7-pegase.com/) and [iTesla](http://www.itesla-project.eu/). These projects have contributed to the choices that are the basis upon which Dyna&omega;o is built: they proved the usability of the Modelica language for power system simulations and contributed to the development of numerical resolution strategies that are integrated into Dyna&omega;o.
 
-![image](assets/images/DynawoModelSolverLight.png){: width="70%" .center-image} 
+![image](assets/images/DynawoModelSolverLight.png){: width="70%" .center-image}
 
 **Dyna&omega;o's primary focus has been on RMS simulations and most of the tests done until now have been for long-term and short-term stability studies.** However, the simulation tool structure offers great flexibility and makes it also possible to run other types of power system simulations, as long as the user provides the necessary models and solvers. Different initiatives are under discussion or submission to test the possibility to use  Dyna&omega;o for EMT simulations or multi-system simulations.
 
@@ -23,7 +23,7 @@ It is an ongoing project based on previous works conducted particularly in two R
 **Only validated models are included into the library that is still under construction.** We plan to release a new set of models in the near future, with for example HVDC, wind and solar power plants models or more different standard regulation models, etc.
 
 Dyna&omega;o is an open source project licensed under the terms of the [Mozilla Public License](http://mozilla.org/MPL/2.0), v. 2.0.
-The source code is hosted into a GitHub [repository](https://github.com/dynawo).
+The source code is hosted into a GitHub [repository](https://github.com/dynawo/dynawo).
 
 Dyna&omega;o is using some external libraries to run simulations:
 * [OpenModelica](https://www.openmodelica.org/), a Modelica environment developed and maintained by the Open Source Modelica Consortium distributed under a GPL V3.0 or OSMC Public License V1.2. The current version used is V1.9.4.

@@ -8,8 +8,8 @@ show_downloads: false
 markdown: kramdown
 
 github:
-  repository_name: Dynawo
-  repository_url: https://github.com/dynawo/dynawo.github.io.git
+  repository_name: Dynawo website
+  repository_url: https://github.com/dynawo
   owner_name: RTE France
   owner_url: https://www.rte-france.com
 
