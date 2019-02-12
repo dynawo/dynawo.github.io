@@ -8,7 +8,7 @@ layout: default
     CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
     license. All rights reserved.
 -->
-For the moment Dyna&omega;o has only be tested on **Linux** platforms (Centos and Debian based) and provided that you can install system packages there should be no problem on other Linux distributions. For **MacOS** and **Windows** users a [Docker](https://www.docker.com/) solution will be provided in a near future. We also plan to provide compilation compatibility for Windows. If you have any issue building Dyna&omega;o don't hesitate to send us an [email](mailto:rte-des-simulation-dynamique@rte-france.com) with your errors and we will try to answer you back quickly.
+For the moment Dyna&omega;o has only be tested on **Linux** platforms (Centos and Debian based) and provided that you can install system packages there should be no problem on other Linux distributions. For **MacOS** and **Windows** users we provide a [Docker](https://github.com/dynawo/dynawo-docker) solution (also on [Docker Hub](https://hub.docker.com/r/dynawo/dynawo)) to either download a [pre-build image](https://github.com/dynawo/dynawo-docker#users) with Dyna&omega;o embedded or create your [own image](https://github.com/dynawo/dynawo-docker#developer) for developers. We also plan to provide compilation compatibility for Windows. If you have any issue building Dyna&omega;o don't hesitate to send us an [email](mailto:rte-des-simulation-dynamique@rte-france.com) with your errors and we will try to answer you back quickly.
 
 Dyna&omega;o and its dependencies will need some packages to work. Here is the list of all packages you can install to have no dependency problem in the following steps. This example works for Ubuntu:
 
