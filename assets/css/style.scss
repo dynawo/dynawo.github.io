@@ -80,9 +80,8 @@ header.inner
 
 footer.inner
 {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
-
 
 body,html
 {
@@ -117,7 +116,13 @@ aside
   border-bottom-right-radius: 2px;
 }
 
-@media screen and (max-width: 1380px) {
+#footer_par
+{
+  text-align: center;
+  margin: 0px;
+}
+
+@media screen and (max-width: 1580px) {
   aside
   {
     float: none;
@@ -140,7 +145,7 @@ aside
 @media screen and (max-width: 992px) {
   #footer_wrap.outer
   {
-    height: 130px;
+    height: 120px;
   }
 }
 
