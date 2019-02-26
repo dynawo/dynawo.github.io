@@ -5,7 +5,7 @@ layout: default
 <!--
     Except where otherwise noted, content in this website is Copyright (c)
     2015-2019, RTE (http://www.rte-france.com) and licensed under a
-    CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+    CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
 The nature of power system dynamics is deeply evolving towards a more diverse and difficult to predict behaviour due to the massive changes going on in the power system (large penetration of power-electronic based components such as Renewable Energies Sources - RES - or High Voltage Direct Current - HVDC - lines, booming use of complex automata, control strategies or smart grids). Due to this radical change from physically-driven to numerically-driven dynamics, being able to assess the system stability becomes harder but is still essential as any generalized incident will be unacceptable for the economy and the consumers. This requires to have access to a transparent, flexible, robust and easy to use simulation tool that will allow to run collaborative studies in a very simple way by sharing not only the same data but also the same modelling and solving choices in an open-source frame. Such a tool will ensure to get similar results and to agree upon optimal and shared actions on the system to accompany the ongoing changes in the best possible way. This analysis has motivated us to launch a new effort on time-domain simulation tools that finally ends up in the development of the Dyna&omega;o's software.

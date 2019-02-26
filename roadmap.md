@@ -5,7 +5,7 @@ layout: default
 <!--
     Except where otherwise noted, content in this website is Copyright (c)
     2015-2019, RTE (http://www.rte-france.com) and licensed under a
-    CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+    CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
 Below are the major development axis identified for Dyna&omega;o for the next few months, with associated contents and due date. It is important to notice that the development content and the due dates may be subject to change due to unforeseen complexity in implementing features or priority changes.
