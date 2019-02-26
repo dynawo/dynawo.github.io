@@ -5,7 +5,7 @@ layout: default
 <!--
     Except where otherwise noted, content in this website is Copyright (c)
     2015-2019, RTE (http://www.rte-france.com) and licensed under a
-    CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+    CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
 **Dyna&omega;o is an hybrid C++/Modelica open source time domain simulation tool for power systems. It aims at providing power system stakeholders with a transparent, flexible, interoperable and robust simulation tool that could ease collaboration and cooperation in the power system community.**
