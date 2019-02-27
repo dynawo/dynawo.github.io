@@ -48,6 +48,8 @@ $> ./myEnvDynawo.sh build-omcDynawo
 $> ./myEnvDynawo.sh build-all
 ```
 
+You can have more information about compilation options and customisation [here](compilation_options).
+
 **Warning**: If you're working behind a proxy make sure you have exported the following proxy environment variables
 ``` bash
 $> export http_proxy=
