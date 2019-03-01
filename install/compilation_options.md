@@ -8,13 +8,13 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
-Dyna&omega;o compilation and launching can be customised through environment variables. `util/envDynawo.sh` script defines some environment variables than can be override by the user. The `myEnvDynawo.sh` script created at the first step of install is a simple way for the user to customise those **environment variables**. Some variables are  **mandatory** and some are **optional**, this page aims at providing information about all those variables.
+Dyna&omega;o compilation and launching can be customised through environment variables. `util/envDynawo.sh` script defines some environment variables than can be overridden by the user. The `myEnvDynawo.sh` script created at the first step of install is a simple way for the user to customise those **environment variables**. Some variables are  **mandatory** and some are **optional**, this page aims at providing information about all those variables.
 
 # Mandatory variables
 
 To launch `util/envDynawo.sh` script a list of variables needs to be defined.
 
-All the variables should be defined through an export `export VAR=VALUE`. For simplicity we recommend to define those in `myEnvDynawo.sh` like it is done in the install procedure of [Dyna&omega;o](/index.md).
+All the variables should be defined through an export `export VAR=VALUE`. **For simplicity we recommend to define those in `myEnvDynawo.sh` like it is done in the install procedure of [Dyna&omega;o](/index.md)**.
 
 |Variable|Description|Value|
 |---------|-----------|-----------|
@@ -24,7 +24,6 @@ All the variables should be defined through an export `export VAR=VALUE`. For si
 |OPENMODELICA_VERSION|Current OpenModelica version used by Dyna&omega;o.|1_9_4|
 |SRC_OPENMODELICA|Path of OpenModelica source code.|PATH|
 |INSTALL_OPENMODELICA|Path of OpenModelica install folder.|PATH|
-|USE_ADEPT|Should Dyna&omega;o use Adept as differentiation tool.|YES|
 
 # Optional variables
 
@@ -35,20 +34,22 @@ Below is a list of variables that are optional to define in `myEnvDynawo.sh`. Us
 
 |Variable|Description|Value|
 |---------|-----------|-----------|
-|NB_PROCESSORS_USED|Allow to use multiple cores for compilation.|1 or n|
-|BROWSER|Define your default browser command.|firefox or other|
-|RESULTS_SHOW|Should browser open at the end of simulation or tests coverage.|true or false|
+|NB_PROCESSORS_USED|Allow to use multiple cores for compilation.|1 (default) or n|
+|BROWSER|Define your default browser command.|firefox (default) or other|
+|RESULTS_SHOW|Should browser open at the end of simulation or tests coverage.|true (default) or false|
 |DYNAWO_LOCALE|Enables to create a different local language for dictionaries.|en_GB|
-|COMPILER|Choose compiler|GCC or CLANG (**Warning** recent version of clang is not working with c++11 for the moment).|
-|DYNAWO_LIBRARY_TYPE|Allow to compile Dyna&omega;o executable and libraries as shared or static objects.|SHARED or STATIC|
-|LIBARCHIVE_HOME|Path to a custom install of libarchive.|PATH|
-|BOOST_ROOT|Path to a custom install of Boost.|PATH|
-|GTEST_ROOT|Path to a custom install of GoogleTest.|PATH|
-|GMOCK_HOME|Path to a custom install of GoogleMock.|Usually GTEST_ROOT|
+|COMPILER|Choose compiler|GCC (default) or CLANG (**Warning** recent version of clang is not working with c++11 for the moment).|
+|DYNAWO_LIBRARY_TYPE|Allow to compile Dyna&omega;o executable and libraries as shared or static objects.|SHARED (default) or STATIC|
+|LIBARCHIVE_HOME|Path to a custom install of libarchive.|PATH (default is system one)|
+|BOOST_ROOT|Path to a custom install of Boost.|PATH (default is system one)|
+|GTEST_ROOT|Path to a custom install of GoogleTest.|PATH (default is system one)|
+|GMOCK_HOME|Path to a custom install of GoogleMock.|Usually GTEST_ROOT (default is system one)|
+
+For `DYNAWO_LOCALE` only `en_GB` is available for the moment and the user would have to define its own dictionaries in `$DYNAWO_HOME/dynawo/sources/Common/Dictionaries` for its language, for example for fr_FR.
 
 # Optional optional variables
 
-Some other variables are even more optional and can be defined by the user in some very particular cases. We recommend to let `util/envDynawo.sh` defines those variables but if you do export them beware of the consequences.
+Some other variables are even more optional and can be defined by the user in some very particular cases. **We recommend to let `util/envDynawo.sh` defines those variables but if you do export them beware of the consequences.**
 
 |Variable|Description|Value|
 |---------|-----------|-----------|
@@ -56,9 +57,9 @@ Some other variables are even more optional and can be defined by the user in so
 |DYNAWO_INSTALL_DIR|Path where you want to install Dyna&omega;o.|PATH|
 |DYNAWO_DEPLOY_DIR|Path where you want to deploy Dyna&omega;o.|PATH|
 |THIRD_PARTY_BUILD_DIR|Where you want to build 3rd Parties.|PATH|
-|THIRD_PARTY_INSTALL_DIR|Where you want to build 3rd Parties.|PATH|
+|THIRD_PARTY_INSTALL_DIR|Where you want to install 3rd Parties.|PATH|
 |MODELICA_LIB|Version of [Modelica Standard Library](https://github.com/modelica/ModelicaStandardLibrary) to use.|3.2.2|
-|USE_XSD_VALIDATION|Enable to use information to validate xml files.|true or false|
+|USE_XSD_VALIDATION|Enable to use information to validate xml files.|true (default) or false|
 |FLOT_DOWNLOAD_URL|Url to a repository containing a Flot archive (named *v0.6.0.tar.gz*).|Default [https://github.com/flot/flot/archive](https://github.com/flot/flot/archive).|
 |JQUERY_DOWNLOAD_URL|Url to a repository containing a JQuery archive (named *1.3.2.targ.gz*).|Default [https://github.com/jquery/jquery/archive](https://github.com/jquery/jquery/archive)|
 |CPPLINT_DOWNLOAD_URL|Url to a repository containing a ccplint archive (named *1.3.0.targ.gz*).|Default [https://github.com/cpplint/cpplint/archive](https://github.com/cpplint/cpplint/archive)|
@@ -160,7 +161,7 @@ $> chmod +x compile_boost.sh
 $> ./compile_boost.sh
 ```
 
-Version 1_69_0 was not tested on Centos6.4 but 1_59_0 is working well.
+**Warning** Version 1_69_0 was not tested on Centos6.4 but 1_59_0 is working well.
 
 ## GoogleTest
 
@@ -212,7 +213,7 @@ $> ./compile_googletest.sh
 
 `DCVF_VERSION` flag might be unused on newer CMake version, it is only here because we had trouble with cmake version 2.8.12.2 (at least).
 
-**Warnings** Version 1.8.1 does not work on Centos6.4 ([Related Issue](https://github.com/google/googletest/pull/2073)) and 1.8.0 causes problems with thread on runtime so we recommend to use the system one (1.5.0) even if at the time GoogleTest instructed to not use pre-built libraries. For more recent OS this procedure and the use of the latest version of GoogleTest should be fine. On Debian based OS **libgtest-dev** provides sources but not compiled version as instructed by GoogleTest so we recommend to install it with the previous procedure (tested on Debian 9). If you have any trouble building GoogleTest stackoverflow is full of answers for various problems on various OS, otherwise don't hesitate to ask us.
+**Warnings** Version 1.8.1 does not work on Centos6.4 ([Related Issue](https://github.com/google/googletest/pull/2073)) and 1.8.0 causes problems with thread on runtime so we recommend to use the system one (1.5.0) even if at the time GoogleTest instructed to not use pre-built libraries. For more recent OS this procedure and the use of the latest version of GoogleTest should be fine. On Debian based OS **libgtest-dev** provides sources but not compiled version as instructed by GoogleTest so we recommend to install it with the previous procedure (tested on Debian 9). If you have any trouble building GoogleTest stackoverflow is full of answers for various problems on various OS, otherwise don't hesitate to ask [us](rte-des-simulation-dynamique@rte-france.com).
 
 ## Lcov
 
