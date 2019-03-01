@@ -33,7 +33,6 @@ export SRC_OPENMODELICA=$DYNAWO_HOME/OpenModelica/Source
 export INSTALL_OPENMODELICA=$DYNAWO_HOME/OpenModelica/Install
 
 export DYNAWO_LOCALE=en_GB
-export USE_ADEPT=YES
 export RESULTS_SHOW=true
 export BROWSER=xdg-open
 
