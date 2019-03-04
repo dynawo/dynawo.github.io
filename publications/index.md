@@ -32,6 +32,8 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 
 ### Publications related to concepts used in Dyna&omega;o
 
+* A. Bartolini, F. Casella and A. Guironnet, "Towards Pan-European Power Grids Modelling in Modelica: Design Principles and A Prototype for A Reference Power System Library", Proceedings of the 13th International Modelica Conference, Regensburg, Germany, March 4-6, 2019  
+
 * P.-M. Gibert, D. Tromeur-Dervout, P. Panciatici, F. Beaude, P. Wang, and J. Erhel, “A generic customized predictor corrector approach for accelerating EMTP-like simulations,” 2017 IEEE Manchester PowerTech, Jun. 2017
 
 * W. Braun, F. Casella, and B. Bachmann, “Solving large-scale Modelica models: new approaches and experimental results using OpenModelica,” Proceedings of the 12th International Modelica Conference, Prague, Czech Republic, May 15-17, 2017, Jul. 2017
