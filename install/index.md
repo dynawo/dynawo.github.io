@@ -51,8 +51,8 @@ You can have more information about compilation options and customisation [here]
 
 **Warning**: If you're working behind a proxy make sure you have exported the following proxy environment variables
 ``` bash
-$> export http_proxy=
-$> export https_proxy=
+$> export http_proxy=http://login:mdp@proxy_address:proxy_port/
+$> export https_proxy=https://login:mdp@proxy_address:proxy_port/
 $> export no_proxy=localhost,127.0.0.0/8,::1
 $> export HTTP_PROXY=$http_proxy;export HTTPS_PROXY=$https_proxy;export NO_PROXY=$no_proxy;
 ```
@@ -87,4 +87,10 @@ For example, for this line disconnection, the plot for the voltage module in p.u
 You can obtain more informations about commands you can use by launching:
 ``` bash
 $> ./myEnvDynawo.sh help
+```
+
+We advise you to create an alias in your bashrc (or other) to be able to call Dyna&omega;o from anywhere:
+``` bash
+$> cd /root/of/dynawo/source/folder
+$> echo "alias dynawo=$(pwd)/myEnvDynawo.sh" >> ~/.bashrc
 ```
