@@ -156,7 +156,7 @@ if [ ! -d "$INSTALL_DIR" ]; then
 fi
 cd $SCRIPT_DIR/$BOOST_DIRECTORY
 ./bootstrap.sh --prefix=$INSTALL_DIR cxxstd=$CXX_STD_FLAG --with-toolset=$(basename $C_COMPILER) --with-libraries=filesystem,program_options,serialization,system,log,iostreams || { echo "Error while bootstrap."; exit 1; }
-./b2 -d2 -j $NB_PROCESSORS_USED --build-dir=$BUILD_DIR  cxxflags="-std=c++$CXX_STD_FLAG" toolset=$(basename $C_COMPILER) variant=${BUILD_TYPE,,} install || { echo "Error while b2."; exit 1; }' > compile_boost.sh
+./b2 -d2 -j $NB_PROCESSORS_USED --build-dir=$BUILD_DIR  cxxflags="-std=c++$CXX_STD_FLAG" toolset=$(basename $C_COMPILER) variant="$(echo "$BUILD_TYPE" | tr "[:upper:]" "[:lower:]")" install || { echo "Error while b2."; exit 1; }' > compile_boost.sh
 $> chmod +x compile_boost.sh
 $> ./compile_boost.sh
 ```
