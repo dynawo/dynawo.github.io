@@ -28,7 +28,6 @@ $> cd dynawo
 $> echo '#!/bin/bash
 export DYNAWO_HOME=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
-export OPENMODELICA_VERSION=1_9_4
 export SRC_OPENMODELICA=$DYNAWO_HOME/OpenModelica/Source
 export INSTALL_OPENMODELICA=$DYNAWO_HOME/OpenModelica/Install
 
@@ -43,8 +42,7 @@ export CXX11_ENABLED=YES
 
 $DYNAWO_HOME/util/envDynawo.sh $@' > myEnvDynawo.sh
 $> chmod +x myEnvDynawo.sh
-$> ./myEnvDynawo.sh build-omcDynawo
-$> ./myEnvDynawo.sh build-all
+$> ./myEnvDynawo.sh build-user
 ```
 
 You can have more information about compilation options and customisation [here](compilation_options).
