@@ -21,7 +21,6 @@ All the variables should be defined through an export `export VAR=VALUE`. **For 
 |DYNAWO_HOME|Path of Dyna&omega;o source code.|PATH|
 |BUILD_TYPE|Compile Dyna&omega;o in Release or Debug.|Debug or Release|
 |CXX11_ENABLED|Should compiler use -std=c++11 or -std=c++98.|YES or NO|
-|OPENMODELICA_VERSION|Current OpenModelica version used by Dyna&omega;o.|1_9_4|
 |SRC_OPENMODELICA|Path of OpenModelica source code.|PATH|
 |INSTALL_OPENMODELICA|Path of OpenModelica install folder.|PATH|
 
@@ -36,6 +35,7 @@ Below is a list of variables that are optional to define in `myEnvDynawo.sh`. Us
 |---------|-----------|-----------|
 |NB_PROCESSORS_USED|Allow to use multiple cores for compilation.|1 (default) or n|
 |BROWSER|Define your default browser command.|firefox (default) or other|
+|DYNAWO_PDFVIEWER|Define your default pdf viewer command.|xdg-open (default) or other (evince)|
 |RESULTS_SHOW|Should browser open at the end of simulation or tests coverage.|true (default) or false|
 |DYNAWO_LOCALE|Enables to create a different local language for dictionaries.|en_GB|
 |COMPILER|Choose compiler|GCC (default) or CLANG (**Warning** recent version of clang is not working with c++11 for the moment).|
@@ -58,7 +58,6 @@ Some other variables are even more optional and can be defined by the user in so
 |DYNAWO_DEPLOY_DIR|Path where you want to deploy Dyna&omega;o.|PATH|
 |THIRD_PARTY_BUILD_DIR|Where you want to build 3rd Parties.|PATH|
 |THIRD_PARTY_INSTALL_DIR|Where you want to install 3rd Parties.|PATH|
-|MODELICA_LIB|Version of [Modelica Standard Library](https://github.com/modelica/ModelicaStandardLibrary) to use.|3.2.2|
 |USE_XSD_VALIDATION|Enable to use information to validate xml files.|true (default) or false|
 |FLOT_DOWNLOAD_URL|Url to a repository containing a Flot archive (named *v0.6.0.tar.gz*).|Default [https://github.com/flot/flot/archive](https://github.com/flot/flot/archive).|
 |JQUERY_DOWNLOAD_URL|Url to a repository containing a JQuery archive (named *1.3.2.targ.gz*).|Default [https://github.com/jquery/jquery/archive](https://github.com/jquery/jquery/archive)|
