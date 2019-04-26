@@ -59,13 +59,13 @@ Once you have installed and compiled Dyna&omega;o as explained in the previous
 part, you can launch a simulation by calling:
 
 ``` bash
-$> ./myEnvDynawo.sh jobs nrt/data/IEEE/IEEE14_BlackBoxModels/IEEE14.jobs
+$> ./myEnvDynawo.sh jobs nrt/data/IEEE14/IEEE14_BasicTestCases/IEEE14_DisconnectLine/IEEE14.jobs
 ```
 
 This command launches a simple simulation on the IEEE 14-bus network that should work if your installation went well and your compilation finished successfully. It could be checked by looking to the outputs directory and comparing its content with the ones from the reference outputs directory (especially the curves file).
 
 ``` bash
-$> cd nrt/data/IEEE/IEEE14_BlackBoxModels
+$> cd nrt/data/IEEE14/IEEE14_BasicTestCases/IEEE14_DisconnectLine
 $> ls outputs
 $> diff outputs/curves/curves.csv reference/outputs/curves/curves.csv
 ```
@@ -75,7 +75,7 @@ All the simulation outputs are stored into the outputs directory.
 It is also possible to display directly simulation results - plots - into a simple GUI (created for demonstration purpose) by using the following command:
 
 ``` bash
-$> ./myEnvDynawo.sh jobs-with-curves nrt/data/IEEE/IEEE14_DisconnectLine/IEEE14.jobs
+$> ./myEnvDynawo.sh jobs-with-curves nrt/data/IEEE14/IEEE14_BasicTestCases/IEEE14_DisconnectLine/IEEE14.jobs
 ```
 
 For example, for this line disconnection, the plot for the voltage module in p.u. on bus 10 should look like this:
