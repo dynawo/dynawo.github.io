@@ -19,31 +19,31 @@ All the variables should be defined through an export `export VAR=VALUE`. **For 
 |Variable|Description|Value|
 |---------|-----------|-----------|
 |DYNAWO_HOME|Path of Dyna&omega;o source code.|PATH|
-|BUILD_TYPE|Compile Dyna&omega;o in Release or Debug.|Debug or Release|
-|CXX11_ENABLED|Should compiler use -std=c++11 or -std=c++98.|YES or NO|
-|SRC_OPENMODELICA|Path of OpenModelica source code.|PATH|
-|INSTALL_OPENMODELICA|Path of OpenModelica install folder.|PATH|
+|DYNAWO_BUILD_TYPE|Compile Dyna&omega;o in Release or Debug.|Debug or Release|
+|DYNAWO_CXX11_ENABLED|Should compiler use -std=c++11 or -std=c++98.|YES or NO|
+|DYNAWO_SRC_OPENMODELICA|Path of OpenModelica source code.|PATH|
+|DYNAWO_INSTALL_OPENMODELICA|Path of OpenModelica install folder.|PATH|
 
 # Optional variables
 
 Below is a list of variables that are optional to define in `myEnvDynawo.sh`. Usually we recommend to at least define:
-- NB_PROCESSORS_USED
-- RESULTS_SHOW
-- BROWSER
+- DYNAWO_NB_PROCESSORS_USED
+- DYNAWO_RESULTS_SHOW
+- DYNAWO_BROWSER
 
 |Variable|Description|Value|
 |---------|-----------|-----------|
-|NB_PROCESSORS_USED|Allow to use multiple cores for compilation.|1 (default) or n|
-|BROWSER|Define your default browser command.|firefox (default) or other|
+|DYNAWO_NB_PROCESSORS_USED|Allow to use multiple cores for compilation.|1 (default) or n|
+|DYNAWO_BROWSER|Define your default browser command.|firefox (default) or other|
 |DYNAWO_PDFVIEWER|Define your default pdf viewer command.|xdg-open (default) or other (evince)|
-|RESULTS_SHOW|Should browser open at the end of simulation or tests coverage.|true (default) or false|
+|DYNAWO_RESULTS_SHOW|Should browser open at the end of simulation or tests coverage.|true (default) or false|
 |DYNAWO_LOCALE|Enables to create a different local language for dictionaries.|en_GB|
-|COMPILER|Choose compiler|GCC (default) or CLANG (**Warning** recent version of clang is not working with c++11 for the moment).|
+|DYNAWO_COMPILER|Choose compiler|GCC (default) or CLANG (**Warning** recent version of clang is not working with c++11 for the moment).|
 |DYNAWO_LIBRARY_TYPE|Allow to compile Dyna&omega;o executable and libraries as shared or static objects.|SHARED (default) or STATIC|
-|LIBARCHIVE_HOME|Path to a custom install of libarchive.|PATH (default is system one)|
-|BOOST_ROOT|Path to a custom install of Boost.|PATH (default is system one)|
-|GTEST_ROOT|Path to a custom install of GoogleTest.|PATH (default is system one)|
-|GMOCK_HOME|Path to a custom install of GoogleMock.|Usually GTEST_ROOT (default is system one)|
+|DYNAWO_LIBARCHIVE_HOME|Path to a custom install of libarchive.|PATH (default is system one)|
+|DYNAWO_BOOST_HOME|Path to a custom install of Boost.|PATH (default is system one)|
+|DYNAWO_GTEST_HOME|Path to a custom install of GoogleTest.|PATH (default is system one)|
+|DYNAWO_GMOCK_HOME|Path to a custom install of GoogleMock.|Usually GTEST_ROOT (default is system one)|
 
 For `DYNAWO_LOCALE` only `en_GB` is available for the moment and the user would have to define its own dictionaries in `$DYNAWO_HOME/dynawo/sources/Common/Dictionaries` for its language, for example for fr_FR.
 
@@ -56,18 +56,18 @@ Some other variables are even more optional and can be defined by the user in so
 |DYNAWO_BUILD_DIR|Path to a build directory (because of CMake should be different than DYNAWO_HOME).|PATH|
 |DYNAWO_INSTALL_DIR|Path where you want to install Dyna&omega;o.|PATH|
 |DYNAWO_DEPLOY_DIR|Path where you want to deploy Dyna&omega;o.|PATH|
-|THIRD_PARTY_BUILD_DIR|Where you want to build 3rd Parties.|PATH|
-|THIRD_PARTY_INSTALL_DIR|Where you want to install 3rd Parties.|PATH|
-|USE_XSD_VALIDATION|Enable to use information to validate xml files.|true (default) or false|
-|FLOT_DOWNLOAD_URL|Url to a repository containing a Flot archive (named *v0.6.0.tar.gz*).|Default [https://github.com/flot/flot/archive](https://github.com/flot/flot/archive).|
-|JQUERY_DOWNLOAD_URL|Url to a repository containing a JQuery archive (named *1.3.2.targ.gz*).|Default [https://github.com/jquery/jquery/archive](https://github.com/jquery/jquery/archive)|
-|CPPLINT_DOWNLOAD_URL|Url to a repository containing a ccplint archive (named *1.3.0.targ.gz*).|Default [https://github.com/cpplint/cpplint/archive](https://github.com/cpplint/cpplint/archive)|
-|ADEPT_DOWNLOAD_URL|Url to a repository containing a Adept archive (named *adept-1.1.tar.gz*).|Default [http://www.met.reading.ac.uk/clouds/adept](http://www.met.reading.ac.uk/clouds/adept)|
-|MODELICA_GIT_URL|Url to a git repository of Modelica Standard Library.|Default [https://github.com/modelica/ModelicaStandardLibrary.git](https://github.com/modelica/ModelicaStandardLibrary.git)|
-|OPENMODELICA_GIT_URL|Url to a git repository of OpenModelica.|Default [https://openmodelica.org/git-readonly/OpenModelica.git](https://openmodelica.org/git-readonly/OpenModelica.git)|
-|SUITE_SPARSE_DOWNLOAD_URL|Url to a repository containing a SuiteSparse archive (named *SuiteSparse-4.5.4.tar.gz*).|Default [http://faculty.cse.tamu.edu/davis/SuiteSparse](http://faculty.cse.tamu.edu/davis/SuiteSparse)|
-|SUNDIALS_DOWNLOAD_URL|Url to a repository containing a Sundials archive (named *sundials-4.1.0.tar.gz*).|Default [https://computation.llnl.gov/projects/sundials/download](https://computation.llnl.gov/projects/sundials/download)|
-|XERCESC_DOWNLOAD_URL|Url to a repository containing a Xerces-C++ archive (named *xerces-c-3.2.2.tar.gz*).|Default [http://archive.apache.org/dist/xerces/c/3/sources](http://archive.apache.org/dist/xerces/c/3/sources)|
+|DYNAWO_THIRD_PARTY_BUILD_DIR|Where you want to build 3rd Parties.|PATH|
+|DYNAWO_THIRD_PARTY_INSTALL_DIR|Where you want to install 3rd Parties.|PATH|
+|DYNAWO_USE_XSD_VALIDATION|Enable to use information to validate xml files.|true (default) or false|
+|DYNAWO_FLOT_DOWNLOAD_URL|Url to a repository containing a Flot archive (named *v0.6.0.tar.gz*).|Default [https://github.com/flot/flot/archive](https://github.com/flot/flot/archive).|
+|DYNAWO_JQUERY_DOWNLOAD_URL|Url to a repository containing a JQuery archive (named *1.3.2.targ.gz*).|Default [https://github.com/jquery/jquery/archive](https://github.com/jquery/jquery/archive)|
+|DYNAWO_CPPLINT_DOWNLOAD_URL|Url to a repository containing a ccplint archive (named *1.3.0.targ.gz*).|Default [https://github.com/cpplint/cpplint/archive](https://github.com/cpplint/cpplint/archive)|
+|DYNAWO_ADEPT_DOWNLOAD_URL|Url to a repository containing a Adept archive (named *adept-1.1.tar.gz*).|Default [http://www.met.reading.ac.uk/clouds/adept](http://www.met.reading.ac.uk/clouds/adept)|
+|DYNAWO_MODELICA_GIT_URL|Url to a git repository of Modelica Standard Library.|Default [https://github.com/modelica/ModelicaStandardLibrary.git](https://github.com/modelica/ModelicaStandardLibrary.git)|
+|DYNAWO_OPENMODELICA_GIT_URL|Url to a git repository of OpenModelica.|Default [https://openmodelica.org/git-readonly/OpenModelica.git](https://openmodelica.org/git-readonly/OpenModelica.git)|
+|DYNAWO_SUITE_SPARSE_DOWNLOAD_URL|Url to a repository containing a SuiteSparse archive (named *SuiteSparse-4.5.4.tar.gz*).|Default [http://faculty.cse.tamu.edu/davis/SuiteSparse](http://faculty.cse.tamu.edu/davis/SuiteSparse)|
+|DYNAWO_SUNDIALS_DOWNLOAD_URL|Url to a repository containing a Sundials archive (named *sundials-4.1.0.tar.gz*).|Default [https://computation.llnl.gov/projects/sundials/download](https://computation.llnl.gov/projects/sundials/download)|
+|DYNAWO_XERCESC_DOWNLOAD_URL|Url to a repository containing a Xerces-C++ archive (named *xerces-c-3.2.2.tar.gz*).|Default [http://archive.apache.org/dist/xerces/c/3/sources](http://archive.apache.org/dist/xerces/c/3/sources)|
 
 # Custom install of system libraries
 
