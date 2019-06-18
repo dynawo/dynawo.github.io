@@ -62,7 +62,7 @@ Some other variables are even more optional and can be defined by the user in so
 |DYNAWO_FLOT_DOWNLOAD_URL|Url to a repository containing a Flot archive (named *v0.6.0.tar.gz*).|Default [https://github.com/flot/flot/archive](https://github.com/flot/flot/archive).|
 |DYNAWO_JQUERY_DOWNLOAD_URL|Url to a repository containing a JQuery archive (named *1.3.2.targ.gz*).|Default [https://github.com/jquery/jquery/archive](https://github.com/jquery/jquery/archive)|
 |DYNAWO_CPPLINT_DOWNLOAD_URL|Url to a repository containing a ccplint archive (named *1.3.0.targ.gz*).|Default [https://github.com/cpplint/cpplint/archive](https://github.com/cpplint/cpplint/archive)|
-|DYNAWO_ADEPT_DOWNLOAD_URL|Url to a repository containing a Adept archive (named *adept-1.1.tar.gz*).|Default [http://www.met.reading.ac.uk/clouds/adept](http://www.met.reading.ac.uk/clouds/adept)|
+|DYNAWO_ADEPT_DOWNLOAD_URL|Url to a repository containing a Adept archive (named *adept-2.0.5.tar.gz*).|Default [http://www.met.reading.ac.uk/clouds/adept](http://www.met.reading.ac.uk/clouds/adept)|
 |DYNAWO_MODELICA_GIT_URL|Url to a git repository of Modelica Standard Library.|Default [https://github.com/modelica/ModelicaStandardLibrary.git](https://github.com/modelica/ModelicaStandardLibrary.git)|
 |DYNAWO_OPENMODELICA_GIT_URL|Url to a git repository of OpenModelica.|Default [https://openmodelica.org/git-readonly/OpenModelica.git](https://openmodelica.org/git-readonly/OpenModelica.git)|
 |DYNAWO_SUITE_SPARSE_DOWNLOAD_URL|Url to a repository containing a SuiteSparse archive (named *SuiteSparse-4.5.4.tar.gz*).|Default [http://faculty.cse.tamu.edu/davis/SuiteSparse](http://faculty.cse.tamu.edu/davis/SuiteSparse)|
