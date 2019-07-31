@@ -38,7 +38,7 @@ Below is a list of variables that are optional to define in `myEnvDynawo.sh`. Us
 |DYNAWO_PDFVIEWER|Define your default pdf viewer command.|xdg-open (default) or other (evince)|
 |DYNAWO_RESULTS_SHOW|Should browser open at the end of simulation or tests coverage.|true (default) or false|
 |DYNAWO_LOCALE|Enables to create a different local language for dictionaries.|en_GB|
-|DYNAWO_COMPILER|Choose compiler|GCC (default) or CLANG (**Warning** recent version of clang is not working with c++11 for the moment).|
+|DYNAWO_COMPILER|Choose compiler|GCC (default) or CLANG|
 |DYNAWO_LIBRARY_TYPE|Allow to compile Dyna&omega;o executable and libraries as shared or static objects.|SHARED (default) or STATIC|
 |DYNAWO_LIBARCHIVE_HOME|Path to a custom install of libarchive.|PATH (default is system one)|
 |DYNAWO_BOOST_HOME|Path to a custom install of Boost.|PATH (default is system one)|
@@ -107,7 +107,7 @@ if [ ! -d "$INSTALL_DIR" ]; then
   mkdir -p $INSTALL_DIR
 fi
 cd $BUILD_DIR
-cmake "$SCRIPT_DIR/$LIBARCHIVE_DIRECTORY" -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_C_COMPILER=$C_COMPILER || { echo "Error while cmake configuration of Libarchive."; exit 1; }
+cmake "$SCRIPT_DIR/$LIBARCHIVE_DIRECTORY" -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_C_COMPILER=$C_COMPILER -DENABLE_BZip2=OFF -DENABLE_LZ4=OFF -DENABLE_LZMA=OFF -DENABLE_NETTLE=OFF -DENABLE_OPENSSL=OFF -DENABLE_EXPAT=OFF || { echo "Error while cmake configuration of Libarchive."; exit 1; }
 make -j $NB_PROCESSORS_USED || { echo "Error while make of Libarchive."; exit 1; }
 make install || { echo "Error while make install of Libarchive."; exit 1; }' > compile_libarchive.sh
 $> chmod +x compile_libarchive.sh
@@ -154,8 +154,8 @@ if [ ! -d "$INSTALL_DIR" ]; then
   mkdir -p $INSTALL_DIR
 fi
 cd $SCRIPT_DIR/$BOOST_DIRECTORY
-./bootstrap.sh --prefix=$INSTALL_DIR cxxstd=$CXX_STD_FLAG --with-toolset=$(basename $C_COMPILER) --with-libraries=filesystem,program_options,serialization,system,log,iostreams || { echo "Error while bootstrap."; exit 1; }
-./b2 -d2 -j $NB_PROCESSORS_USED --build-dir=$BUILD_DIR  cxxflags="-std=c++$CXX_STD_FLAG" toolset=$(basename $C_COMPILER) variant="$(echo "$BUILD_TYPE" | tr "[:upper:]" "[:lower:]")" install || { echo "Error while b2."; exit 1; }' > compile_boost.sh
+./bootstrap.sh --prefix=$INSTALL_DIR cxxstd=$CXX_STD_FLAG --without-icu --with-toolset=$(basename $C_COMPILER) --with-libraries=filesystem,program_options,serialization,system,log,iostreams,atomic || { echo "Error while bootstrap."; exit 1; }
+./b2 -d2 -j $NB_PROCESSORS_USED --build-dir=$BUILD_DIR --disable-icu boost.locale.icu=off cxxflags="-std=c++$CXX_STD_FLAG" toolset=$(basename $C_COMPILER) variant="$(echo "$BUILD_TYPE" | tr "[:upper:]" "[:lower:]")" install || { echo "Error while b2."; exit 1; }' > compile_boost.sh
 $> chmod +x compile_boost.sh
 $> ./compile_boost.sh
 ```
@@ -245,3 +245,5 @@ $> ./compile_lcov.sh
 ```
 
 You can then use your custom install with `export PATH=/path/to/compile_lcov.sh/Lcov/install/1.13/usr/local/bin:$PATH` in your `myEnvDynawo.sh` script.
+
+## CMake
