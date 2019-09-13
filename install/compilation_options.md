@@ -73,6 +73,7 @@ Some other variables are even more optional and can be defined by the user in so
 
 Some system libraries that should be installed through a package manager (**dnf** or **apt** for example) can be installed from source and used to compile Dyna&omega;o against them. **We don't recommend to do this on recent OS** but this procedure have been tested on Centos6.4 with success. Below we provide small scripts to download and compile a **Release** or **Debug** version of those libraries. All downloads and builds will be done in the directory where you create the scripts (ie execute the first command).
 
+<a name="libarchive"></a>
 ## Libarchive
 
 [Libarchive website](https://www.libarchive.org/)
@@ -90,10 +91,10 @@ C_COMPILER=$(command -v gcc)
 NB_PROCESSORS_USED=1
 cd $SCRIPT_DIR
 if [ ! -f "${LIBARCHIVE_ARCHIVE}" ]; then
-  if [ -x "$(command -v wget)" ]; then
-    wget ${LIBARCHIVE_DOWNLOAD_URL}/${LIBARCHIVE_ARCHIVE} || { echo "Error while downloading Libarchive."; exit 1; }
+  if [ -x "$(command -v curl)" ]; then
+    curl -L ${LIBARCHIVE_DOWNLOAD_URL}/${LIBARCHIVE_ARCHIVE} -o ${LIBARCHIVE_ARCHIVE} || { echo "Error while downloading Libarchive."; exit 1; }
   else
-    echo "You need to install wget."
+    echo "You need to install curl."
     exit 1
   fi
 fi
@@ -114,6 +115,7 @@ $> chmod +x compile_libarchive.sh
 $> ./compile_libarchive.sh
 ```
 
+<a name="boost"></a>
 ## Boost
 
 [Boost website](https://www.boost.org/)
@@ -128,14 +130,14 @@ BUILD_DIR=$SCRIPT_DIR/boost/build/${BOOST_VERSION//_/.}
 BUILD_TYPE=Release
 INSTALL_DIR=$SCRIPT_DIR/boost/install/${BOOST_VERSION//_/.}
 C_COMPILER=$(command -v gcc)
-CXX11_ENABLED=NO
+CXX11_ENABLED=YES
 NB_PROCESSORS_USED=1
 cd $SCRIPT_DIR
 if [ ! -f "${BOOST_ARCHIVE}" ]; then
-  if [ -x "$(command -v wget)" ]; then
-    wget ${BOOST_DOWNLOAD_URL}/${BOOST_ARCHIVE} || { echo "Error while downloading Boost."; exit 1; }
+  if [ -x "$(command -v curl)" ]; then
+    curl -L ${BOOST_DOWNLOAD_URL}/${BOOST_ARCHIVE} -o ${BOOST_ARCHIVE} || { echo "Error while downloading Boost."; exit 1; }
   else
-    echo "You need to install wget."
+    echo "You need to install curl."
     exit 1
   fi
 fi
@@ -162,6 +164,7 @@ $> ./compile_boost.sh
 
 **Warning** Version 1_69_0 was not tested on Centos6.4 but 1_59_0 is working well.
 
+<a name="googletest"></a>
 ## GoogleTest
 
 [GoogleTest website](https://github.com/google/googletest)
@@ -177,14 +180,14 @@ BUILD_TYPE=Release
 INSTALL_DIR=$SCRIPT_DIR/googletest/install/$GTEST_VERSION
 C_COMPILER=$(command -v gcc)
 CXX_COMPILER=$(command -v g++)
-CXX11_ENABLED=NO
+CXX11_ENABLED=YES
 NB_PROCESSORS_USED=1
 cd $SCRIPT_DIR
 if [ ! -f "${GTEST_ARCHIVE}" ]; then
-  if [ -x "$(command -v wget)" ]; then
-    wget ${GTEST_DOWNLOAD_URL}/${GTEST_ARCHIVE} || { echo "Error while downloading GoogleTest."; exit 1; }
+  if [ -x "$(command -v curl)" ]; then
+    curl -L ${GTEST_DOWNLOAD_URL}/${GTEST_ARCHIVE} -o ${GTEST_ARCHIVE} || { echo "Error while downloading GoogleTest."; exit 1; }
   else
-    echo "You need to install wget."
+    echo "You need to install curl."
     exit 1
   fi
 fi
@@ -214,6 +217,7 @@ $> ./compile_googletest.sh
 
 **Warnings** Version 1.8.1 does not work on Centos6.4 ([Related Issue](https://github.com/google/googletest/pull/2073)) and 1.8.0 causes problems with thread on runtime so we recommend to use the system one (1.5.0) even if at the time GoogleTest instructed to not use pre-built libraries. For more recent OS this procedure and the use of the latest version of GoogleTest should be fine. On Debian based OS **libgtest-dev** provides sources but not compiled version as instructed by GoogleTest so we recommend to install it with the previous procedure (tested on Debian 9). If you have any trouble building GoogleTest stackoverflow is full of answers for various problems on various OS, otherwise don't hesitate to ask [us](rte-des-simulation-dynamique@rte-france.com).
 
+<a name="lcov"></a>
 ## Lcov
 
 ``` bash
@@ -225,10 +229,10 @@ SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 INSTALL_DIR=$SCRIPT_DIR/Lcov/install/$LCOV_VERSION
 cd $SCRIPT_DIR
 if [ ! -f "${LCOV_ARCHIVE}" ]; then
-  if [ -x "$(command -v wget)" ]; then
-    wget ${LCOV_DOWNLOAD_URL}/${LCOV_ARCHIVE} || { echo "Error while downloading Lcov."; exit 1; }
+  if [ -x "$(command -v curl)" ]; then
+    curl -L ${LCOV_DOWNLOAD_URL}/${LCOV_ARCHIVE} -o ${LCOV_ARCHIVE} || { echo "Error while downloading Lcov."; exit 1; }
   else
-    echo "You need to install wget."
+    echo "You need to install curl."
     exit 1
   fi
 fi
