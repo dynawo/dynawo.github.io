@@ -78,7 +78,8 @@ Some system libraries that should be installed through a package manager (**dnf*
 [Libarchive website](https://www.libarchive.org/)
 
 ``` bash
-$> echo 'LIBARCHIVE_VERSION=3.3.3
+$> echo '#!/bin/bash
+LIBARCHIVE_VERSION=3.3.3
 LIBARCHIVE_ARCHIVE=libarchive-${LIBARCHIVE_VERSION}.tar.gz
 LIBARCHIVE_DIRECTORY=libarchive-$LIBARCHIVE_VERSION
 LIBARCHIVE_DOWNLOAD_URL=https://libarchive.org/downloads
@@ -119,7 +120,8 @@ $> ./compile_libarchive.sh
 [Boost website](https://www.boost.org/)
 
 ``` bash
-$> echo 'BOOST_VERSION=1_69_0
+$> echo '#!/bin/bash
+BOOST_VERSION=1_69_0
 BOOST_ARCHIVE=boost_${BOOST_VERSION}.tar.gz
 BOOST_DIRECTORY=boost_$BOOST_VERSION
 BOOST_DOWNLOAD_URL=https://sourceforge.net/projects/boost/files/boost/${BOOST_VERSION//_/.}
@@ -167,7 +169,8 @@ $> ./compile_boost.sh
 [GoogleTest website](https://github.com/google/googletest)
 
 ``` bash
-$> echo 'GTEST_VERSION=1.8.1
+$> echo '#!/bin/bash
+GTEST_VERSION=1.8.1
 GTEST_ARCHIVE=release-${GTEST_VERSION}.tar.gz
 GTEST_DIRECTORY=googletest-release-$GTEST_VERSION
 GTEST_DOWNLOAD_URL=https://github.com/google/googletest/archive
@@ -217,7 +220,8 @@ $> ./compile_googletest.sh
 ## Lcov
 
 ``` bash
-$> echo 'LCOV_VERSION=1.13
+$> echo '#!/bin/bash
+LCOV_VERSION=1.13
 LCOV_ARCHIVE=lcov-$LCOV_VERSION.tar.gz
 LCOV_DIRECTORY=lcov-$LCOV_VERSION
 LCOV_DOWNLOAD_URL=https://downloads.sourceforge.net/ltp
@@ -247,3 +251,39 @@ $> ./compile_lcov.sh
 You can then use your custom install with `export PATH=/path/to/compile_lcov.sh/Lcov/install/1.13/usr/local/bin:$PATH` in your `myEnvDynawo.sh` script.
 
 ## CMake
+
+``` bash
+$> echo '#!/bin/bash
+CMAKE_VERSION=3.12.3
+CMAKE_VERSION_SHORT=3.12
+CMAKE_ARCHIVE=cmake-$CMAKE_VERSION.tar.gz
+CMAKE_DOWNLOAD_URL=https://cmake.org/files/v$CMAKE_VERSION_SHORT
+CMAKE_DIRECTORY=cmake-$CMAKE_VERSION
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+INSTALL_DIR=$SCRIPT_DIR/cmake/install/${CMAKE_VERSION//_/.}
+NB_PROCESSORS_USED=1
+pushd $SCRIPT_DIR
+if [ ! -f "${CMAKE_ARCHIVE}" ]; then
+  if [ -x "$(command -v curl)" ]; then
+    curl -L ${CMAKE_DOWNLOAD_URL}/${CMAKE_ARCHIVE} -o ${CMAKE_ARCHIVE} || { echo "Error while downloading cmake."; exit 1; }
+  else
+    echo "You need to install curl."
+    exit 1
+  fi
+fi
+if [ ! -d "$SCRIPT_DIR/$CMAKE_DIRECTORY" ]; then
+  tar -xzf $CMAKE_ARCHIVE -C $SCRIPT_DIR || { echo "Error while extracting cmake."; exit 1; }
+fi
+
+if [ ! -d "$INSTALL_DIR" ]; then
+  mkdir -p $INSTALL_DIR
+fi
+pushd $SCRIPT_DIR/$CMAKE_DIRECTORY
+CC=gcc CXX=g++ ./bootstrap --prefix=$INSTALL_DIR || { echo "Error while bootstrap cmake."; exit 1; }
+make -j $NB_PROCESSORS_USED || { echo "Error while cmake make."; exit 1; }
+make -j $NB_PROCESSORS_USED install || { echo "Error while cmake make install."; exit 1; }' > compile_cmake.sh
+$> chmod +x compile_cmake.sh
+$> ./compile_cmake.sh
+```
+
+You can use your custom install with `export PATH=PATH_TO_CMAKE_INSTALL/bin:$PATH` in your `myEnvDynawo.sh` script.
