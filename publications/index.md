@@ -26,6 +26,8 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 
 ### Publications using Dyna&omega;o
 
+* L. Razik, L. Schumacher, A. Monti, A. Guironnet, and G. Bureau, “A comparative analysis of LU decomposition methods for power system simulations,” 2019 IEEE Milan PowerTech, Jun. 2019.
+
 * P.-M. Gibert, P. Panciatici, R. Losseau, A. Guironnet, D. Tromeur-Dervout, and J. Erhel, “Speedup of EMT simulations by using an integration scheme enriched with a predictive Fourier coefficients estimator,” 2018 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2018.
 
 * P.-M. Gibert, R. Losseau, A. Guironnet, P. Panciatici, D. Tromeur-Dervout, and J. Erhel, “Use of the Sinusoidal Predictor Method within a Fully Separated Modeler/Solver Framework for Fast and Flexible EMT Simulations,” Proceedings of 8th International Conference on Simulation and Modeling Methodologies, Technologies and Applications, 2018.
