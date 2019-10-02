@@ -215,7 +215,7 @@ $> ./compile_googletest.sh
 
 `DCVF_VERSION` flag might be unused on newer CMake version, it is only here because we had trouble with cmake version 2.8.12.2 (at least).
 
-**Warnings** Version 1.8.1 does not work on Centos6.4 ([Related Issue](https://github.com/google/googletest/pull/2073)) and 1.8.0 causes problems with thread on runtime so we recommend to use the system one (1.5.0) even if at the time GoogleTest instructed to not use pre-built libraries. For more recent OS this procedure and the use of the latest version of GoogleTest should be fine. On Debian based OS **libgtest-dev** provides sources but not compiled version as instructed by GoogleTest so we recommend to install it with the previous procedure (tested on Debian 9). If you have any trouble building GoogleTest stackoverflow is full of answers for various problems on various OS, otherwise don't hesitate to ask [us](rte-des-simulation-dynamique@rte-france.com).
+**Warnings** Version 1.8.1 does not work on Centos6.4 ([Related Issue](https://github.com/google/googletest/pull/2073)) and 1.8.0 causes problems with thread on runtime so we recommend to use the system one (1.5.0) even if at the time GoogleTest instructed to not use pre-built libraries. For more recent OS this procedure and the use of the latest version of GoogleTest should be fine. On Debian based OS **libgtest-dev** provides sources but not compiled version as instructed by GoogleTest so we recommend to install it with the previous procedure (tested on Debian 9). If you have any trouble building GoogleTest stackoverflow is full of answers for various problems on various OS, otherwise don't hesitate to ask [us](rte-dynawo@rte-france.com).
 
 ## Lcov
 
