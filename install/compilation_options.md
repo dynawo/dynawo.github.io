@@ -73,150 +73,6 @@ Some other variables are even more optional and can be defined by the user in so
 
 Some system libraries that should be installed through a package manager (**dnf** or **apt** for example) can be installed from source and used to compile Dyna&omega;o against them. **We don't recommend to do this on recent OS** but this procedure have been tested on Centos6.4 with success. Below we provide small scripts to download and compile a **Release** or **Debug** version of those libraries. All downloads and builds will be done in the directory where you create the scripts (ie execute the first command).
 
-## Libarchive
-
-[Libarchive website](https://www.libarchive.org/)
-
-``` bash
-$> echo '#!/bin/bash
-LIBARCHIVE_VERSION=3.3.3
-LIBARCHIVE_ARCHIVE=libarchive-${LIBARCHIVE_VERSION}.tar.gz
-LIBARCHIVE_DIRECTORY=libarchive-$LIBARCHIVE_VERSION
-LIBARCHIVE_DOWNLOAD_URL=https://libarchive.org/downloads
-SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-BUILD_DIR=$SCRIPT_DIR/libarchive/build/$LIBARCHIVE_VERSION
-BUILD_TYPE=Release
-INSTALL_DIR=$SCRIPT_DIR/libarchive/install/$LIBARCHIVE_VERSION
-C_COMPILER=$(command -v gcc)
-NB_PROCESSORS_USED=1
-cd $SCRIPT_DIR
-if [ ! -f "${LIBARCHIVE_ARCHIVE}" ]; then
-  if [ -x "$(command -v wget)" ]; then
-    wget ${LIBARCHIVE_DOWNLOAD_URL}/${LIBARCHIVE_ARCHIVE} || { echo "Error while downloading Libarchive."; exit 1; }
-  else
-    echo "You need to install wget."
-    exit 1
-  fi
-fi
-if [ ! -d "$SCRIPT_DIR/$LIBARCHIVE_DIRECTORY" ]; then
-  tar -xzf $LIBARCHIVE_ARCHIVE -C $SCRIPT_DIR || { echo "Error while extracting Libarchive."; exit 1; }
-fi
-if [ ! -d "$BUILD_DIR" ]; then
-  mkdir -p $BUILD_DIR
-fi
-if [ ! -d "$INSTALL_DIR" ]; then
-  mkdir -p $INSTALL_DIR
-fi
-cd $BUILD_DIR
-cmake "$SCRIPT_DIR/$LIBARCHIVE_DIRECTORY" -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_C_COMPILER=$C_COMPILER -DENABLE_BZip2=OFF -DENABLE_LZ4=OFF -DENABLE_LZMA=OFF -DENABLE_NETTLE=OFF -DENABLE_OPENSSL=OFF -DENABLE_EXPAT=OFF || { echo "Error while cmake configuration of Libarchive."; exit 1; }
-make -j $NB_PROCESSORS_USED || { echo "Error while make of Libarchive."; exit 1; }
-make install || { echo "Error while make install of Libarchive."; exit 1; }' > compile_libarchive.sh
-$> chmod +x compile_libarchive.sh
-$> ./compile_libarchive.sh
-```
-
-## Boost
-
-[Boost website](https://www.boost.org/)
-
-``` bash
-$> echo '#!/bin/bash
-BOOST_VERSION=1_69_0
-BOOST_ARCHIVE=boost_${BOOST_VERSION}.tar.gz
-BOOST_DIRECTORY=boost_$BOOST_VERSION
-BOOST_DOWNLOAD_URL=https://sourceforge.net/projects/boost/files/boost/${BOOST_VERSION//_/.}
-SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-BUILD_DIR=$SCRIPT_DIR/boost/build/${BOOST_VERSION//_/.}
-BUILD_TYPE=Release
-INSTALL_DIR=$SCRIPT_DIR/boost/install/${BOOST_VERSION//_/.}
-C_COMPILER=$(command -v gcc)
-CXX11_ENABLED=NO
-NB_PROCESSORS_USED=1
-cd $SCRIPT_DIR
-if [ ! -f "${BOOST_ARCHIVE}" ]; then
-  if [ -x "$(command -v wget)" ]; then
-    wget ${BOOST_DOWNLOAD_URL}/${BOOST_ARCHIVE} || { echo "Error while downloading Boost."; exit 1; }
-  else
-    echo "You need to install wget."
-    exit 1
-  fi
-fi
-if [ ! -d "$SCRIPT_DIR/$BOOST_DIRECTORY" ]; then
-  tar -xzf $BOOST_ARCHIVE -C $SCRIPT_DIR || { echo "Error while extracting Boost."; exit 1; }
-fi
-if [ "$(echo "$CXX11_ENABLED" | tr "[:upper:]" "[:lower:]")" = "no" -o "$(echo "$CXX11_ENABLED" | tr "[:upper:]" "[:lower:]")" = "false" -o "$(echo "$CXX11_ENABLED" | tr "[:upper:]" "[:lower:]")" = "off" ]; then
-  CXX_STD_FLAG="98"
-else
-  CXX_STD_FLAG="11"
-fi
-if [ ! -d "$BUILD_DIR" ]; then
-  mkdir -p $BUILD_DIR
-fi
-if [ ! -d "$INSTALL_DIR" ]; then
-  mkdir -p $INSTALL_DIR
-fi
-cd $SCRIPT_DIR/$BOOST_DIRECTORY
-./bootstrap.sh --prefix=$INSTALL_DIR cxxstd=$CXX_STD_FLAG --without-icu --with-toolset=$(basename $C_COMPILER) --with-libraries=filesystem,program_options,serialization,system,log,iostreams,atomic || { echo "Error while bootstrap."; exit 1; }
-./b2 -d2 -j $NB_PROCESSORS_USED --build-dir=$BUILD_DIR --disable-icu boost.locale.icu=off cxxflags="-std=c++$CXX_STD_FLAG" toolset=$(basename $C_COMPILER) variant="$(echo "$BUILD_TYPE" | tr "[:upper:]" "[:lower:]")" install || { echo "Error while b2."; exit 1; }' > compile_boost.sh
-$> chmod +x compile_boost.sh
-$> ./compile_boost.sh
-```
-
-**Warning** Version 1_69_0 was not tested on Centos6.4 but 1_59_0 is working well.
-
-## GoogleTest
-
-[GoogleTest website](https://github.com/google/googletest)
-
-``` bash
-$> echo '#!/bin/bash
-GTEST_VERSION=1.8.1
-GTEST_ARCHIVE=release-${GTEST_VERSION}.tar.gz
-GTEST_DIRECTORY=googletest-release-$GTEST_VERSION
-GTEST_DOWNLOAD_URL=https://github.com/google/googletest/archive
-SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-BUILD_DIR=$SCRIPT_DIR/googletest/build/$GTEST_VERSION
-BUILD_TYPE=Release
-INSTALL_DIR=$SCRIPT_DIR/googletest/install/$GTEST_VERSION
-C_COMPILER=$(command -v gcc)
-CXX_COMPILER=$(command -v g++)
-CXX11_ENABLED=NO
-NB_PROCESSORS_USED=1
-cd $SCRIPT_DIR
-if [ ! -f "${GTEST_ARCHIVE}" ]; then
-  if [ -x "$(command -v wget)" ]; then
-    wget ${GTEST_DOWNLOAD_URL}/${GTEST_ARCHIVE} || { echo "Error while downloading GoogleTest."; exit 1; }
-  else
-    echo "You need to install wget."
-    exit 1
-  fi
-fi
-if [ ! -d "$SCRIPT_DIR/$GTEST_DIRECTORY" ]; then
-  tar -xzf $GTEST_ARCHIVE -C $SCRIPT_DIR || { echo "Error while extracting GoogleTest."; exit 1; }
-fi
-if [ ! -d "$BUILD_DIR" ]; then
-  mkdir -p $BUILD_DIR
-fi
-if [ ! -d "$INSTALL_DIR" ]; then
-  mkdir -p $INSTALL_DIR
-fi
-if [ "$(echo "$CXX11_ENABLED" | tr "[:upper:]" "[:lower:]")" = "no" -o "$(echo "$CXX11_ENABLED" | tr "[:upper:]" "[:lower:]")" = "false" -o "$(echo "$CXX11_ENABLED" | tr "[:upper:]" "[:lower:]")" = "off" ]; then
-  CXX_STD_FLAG="98"
-else
-  CXX_STD_FLAG="11"
-fi
-cd $BUILD_DIR
-cmake "$SCRIPT_DIR/$GTEST_DIRECTORY" -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_C_COMPILER=$C_COMPILER -DCMAKE_CXX_COMPILER=$CXX_COMPILER -DCMAKE_CXX_FLAGS="-std=c++$CXX_STD_FLAG" -DCVF_VERSION:STRING=1.9.0 || { echo "Error while cmake configuration of GoogleTest."; exit 1; }
-make -j $NB_PROCESSORS_USED || { echo "Error while make."; exit 1; }
-make install || { echo "Error while make install."; exit 1; }' > compile_googletest.sh
-$> chmod +x compile_googletest.sh
-$> ./compile_googletest.sh
-```
-
-`DCVF_VERSION` flag might be unused on newer CMake version, it is only here because we had trouble with cmake version 2.8.12.2 (at least).
-
-**Warnings** Version 1.8.1 does not work on Centos6.4 ([Related Issue](https://github.com/google/googletest/pull/2073)) and 1.8.0 causes problems with thread on runtime so we recommend to use the system one (1.5.0) even if at the time GoogleTest instructed to not use pre-built libraries. For more recent OS this procedure and the use of the latest version of GoogleTest should be fine. On Debian based OS **libgtest-dev** provides sources but not compiled version as instructed by GoogleTest so we recommend to install it with the previous procedure (tested on Debian 9). If you have any trouble building GoogleTest stackoverflow is full of answers for various problems on various OS, otherwise don't hesitate to ask [us](rte-dynawo@rte-france.com).
-
 ## Lcov
 
 ``` bash
@@ -229,10 +85,10 @@ SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 INSTALL_DIR=$SCRIPT_DIR/Lcov/install/$LCOV_VERSION
 cd $SCRIPT_DIR
 if [ ! -f "${LCOV_ARCHIVE}" ]; then
-  if [ -x "$(command -v wget)" ]; then
-    wget ${LCOV_DOWNLOAD_URL}/${LCOV_ARCHIVE} || { echo "Error while downloading Lcov."; exit 1; }
+  if [ -x "$(command -v curl)" ]; then
+    curl -L ${LCOV_DOWNLOAD_URL}/${LCOV_ARCHIVE} -o ${LCOV_ARCHIVE} || { echo "Error while downloading Lcov."; exit 1; }
   else
-    echo "You need to install wget."
+    echo "You need to install curl."
     exit 1
   fi
 fi
@@ -279,7 +135,7 @@ if [ ! -d "$INSTALL_DIR" ]; then
   mkdir -p $INSTALL_DIR
 fi
 pushd $SCRIPT_DIR/$CMAKE_DIRECTORY
-CC=gcc CXX=g++ ./bootstrap --prefix=$INSTALL_DIR || { echo "Error while bootstrap cmake."; exit 1; }
+./bootstrap --system-curl --prefix=$INSTALL_DIR || { echo "Error while bootstrap cmake."; exit 1; }
 make -j $NB_PROCESSORS_USED || { echo "Error while cmake make."; exit 1; }
 make -j $NB_PROCESSORS_USED install || { echo "Error while cmake make install."; exit 1; }' > compile_cmake.sh
 $> chmod +x compile_cmake.sh
