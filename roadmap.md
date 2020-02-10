@@ -12,9 +12,9 @@ Below are the major development axis identified for Dyna&omega;o for the next fe
 
 ### Axis 1 - Test cases and models development
 
-* ~~Adding larger IEEE cases (IEEE14, IEEE57) ~~
+* ~~Adding larger IEEE cases (IEEE14, IEEE57)~~
 * Adding large scale test cases (national and panEuropean ones): postponed to June 2020
-* ~~Adding new models (proportional and proportional integral VR, proportional governor, static var compensator, PLL, injectors) ~~
+* ~~Adding new models (proportional and proportional integral VR, proportional governor, static var compensator, PLL, injectors)~~
 * PV WECC model: under progress, expected February 2020
 * Grid forming converters models: under progress, expected March 2020
 * Nordic32 case: expected June 2020
