@@ -12,23 +12,25 @@ Below are the major development axis identified for Dyna&omega;o for the next fe
 
 ### Axis 1 - Test cases and models development
 
-* ~~Adding larger IEEE cases~~
-* Adding large scale test cases (national and panEuropean ones): postponed to February 2020
-* ~~Adding new models (standard regulations for generators, static var compensator, etc.)~~
-* PV WECC model: under progress, expected December 2019
-* Nordic32 case: expected February 2020
+* ~~Adding larger IEEE cases (IEEE14, IEEE57) ~~
+* Adding large scale test cases (national and panEuropean ones): postponed to June 2020
+* ~~Adding new models (proportional and proportional integral VR, proportional governor, static var compensator, PLL, injectors) ~~
+* PV WECC model: under progress, expected February 2020
+* Grid forming converters models: under progress, expected March 2020
+* Nordic32 case: expected June 2020
+* Wind WECC model: expected July 2020
+* HVDC standard model: expected September 2020
 
 ### Axis 2 - Dependencies upgrade and cross-platform deployment
 
 * ~~Switch to OpenModelica V1.13 version and DAE mode use~~
-* ~~Switch to SUNDIALS V4.0 version~~
+* Switch to Sundials V5.0.0 and Suitesparse V5.3.0
 * Switch to a newer IIDM library version: postponed to June 2020
-* ~~Mac portability~~
-* Windows portability: under progress
+* ~~Mac and Windows portability~~
 * ~~Switch to Modelica V3.2.3~~
 
 ### Axis 3 - Dyna&omega;o structure evolution
-* Performance improvement: under progress, expected December 2019
+* ~~Performance improvement (code optimization, models improvements)~~
 * New initialization strategy: using Modelica initEquations section into Dyna&omega;o: postponed
 * Dyna&omega;o connectivity analysis improvement (system splitting): postponed December 2020
 
