@@ -8,7 +8,112 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
-For the moment Dyna&omega;o has only be tested on **Linux** platforms (Centos and Debian based) and provided that you can install system packages there should be no problem on other Linux distributions. For **MacOS** and **Windows** users we provide a [Docker](https://github.com/dynawo/dynawo-docker) solution (also on [Docker Hub](https://hub.docker.com/r/dynawo/dynawo)) to either download a [pre-build image](https://github.com/dynawo/dynawo-docker#users) with Dyna&omega;o embedded or create your [own image](https://github.com/dynawo/dynawo-docker#developer) for developers. We also plan to provide compilation compatibility for Windows. If you have any issue building Dyna&omega;o don't hesitate to send us an [email](mailto:rte-dynawo@rte-france.com) with your errors and we will try to answer you back quickly.
+Dyna&omega;o is available on **Linux**, **Windows** and **MacOS**. You can either build it from sources or use official binaries distributed on Github.
+If you have any issue building or using Dyna&omega;o don't hesitate to send us an [email](mailto:rte-dynawo@rte-france.com) with your errors.
+
+Latest release: [Dyna&omega;o v1.1.0]({{ '/release_note' }})
+
+|----------------------------:|---|
+|       Linux distribution | [Dynawo_Linux_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip)  |
+|     Windows distribution  | Coming soon  |
+|       MacOS distribution  | Coming soon  |
+| Documentation | [DynawoDocumentation.pdf](https://github.com/dynawo/dynawo/releases/download/v1.1.0/DynawoDocumentation.pdf)  |
+| Detailed release note  | [v1.1.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.1.0/v1.1.0_release_note.txt)  |
+
+
+
+### Dyna&omega;o Linux binaries distribution
+
+Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip).
+
+Dyna&omega;o is tested on **Fedora** and **Ubuntu** based platforms. 
+However, provided that you can install system packages there should be no problem on others Linux distributions.
+
+Required dependencies are the following:
+
+* Compilers: C and C++ ([gcc](https://www.gnu.org/software/gcc) or [clang](https://clang.llvm.org)), c++98 or c++11 compatible for C++ standard
+
+* Python 2.7
+
+* Utilities: [curl](https://curl.haxx.se) and unzip
+
+* Libraries: [BLAS](http://www.netlib.org/blas/index.html), [LAPACK](http://www.netlib.org/lapack/index.html)
+
+* [CMake](https://cmake.org/) (minimum version 3.9.6)
+
+Following commands can be used to install the required dependencies:
+
+Ubuntu:
+
+``` bash
+$> apt-get install -y g++ unzip curl python liblapacke
+```
+
+Fedora:
+
+``` bash
+$> dnf install -y gcc-c++ unzip curl python lapack
+```
+
+Following commands can be used to download and test the latest distribution:
+
+``` bash
+$> curl -L $(curl -s -L -X GET https://api.github.com/repos/dynawo/dynawo/releases/latest | grep "Dynawo_Linux" | grep url | cut -d '"' -f 4) -o Dynawo_Linux_latest.zip
+$> unzip Dynawo_Linux_latest.zip -d Dynawo_Linux_latest
+$> Dynawo_Linux_latest/bin/execDynawo.sh jobs-with-curves Dynawo_Linux_latest/testcases/IEEE14/IEEE14_SyntaxExamples/IEEE14_ModelicaModel/IEEE14.jobs
+$> Dynawo_Linux_latest/bin/execDynawo.sh help
+$> Dynawo_Linux_latest/bin/execDynawo.sh jobs --help
+```
+
+### Dyna&omega;o MacOS binaries distribution
+
+Official MacOS-based release will be available soon.
+
+Dyna&omega;o is tested on **Mojave 10.14.5** only. 
+
+Required dependencies are the following:
+
+* [CMake](https://cmake.org/) (minimum version 3.9.6)
+
+* Command Line Tools
+
+``` bash
+$> xcode-select --install
+```
+
+Similar commands as the  ones proposed in Linux section can be used to download and test Dyna&omega;o.
+
+### Dyna&omega;o Windows binaries distribution
+
+Official Windows-based release will be available soon.
+
+Dyna&omega;o is tested on **Windows 10**. 
+
+If you plan to use Dyna&omega;o with the default models library there is no additional dependency.
+
+If you plan to compile on the fly your own Modelica models then required dependencies are the following:
+
+* [Visual Studio 2019](https://visualstudio.microsoft.com)
+
+* [CMake](https://cmake.org/) (minimum version 3.9.6)
+
+* [Python2](https://www.python.org/ftp/python/2.7.17/python-2.7.17.amd64.msi)
+
+You can do as follows to download and test Dyna&omega;o:
+
+* Download the zip of the distribution and unzip it somewhere 
+
+* Open either **Command Prompt** or **x64 Native Tools Command Prompt for VS2019** (to be able to use your own models) 
+
+* Use **cd** to browse the directory previously unzipped. A file named **dynawo.cmd** should be there.
+
+* Use following commands to launch a simulation:
+
+``` bash
+$> dynawo --jobs-file testcases\IEEE14\IEEE14_BasicTestCases\IEEE14_LoadVariation\IEEE14.jobs
+```
+
+### Building Dyna&omega;o from sources on Linux
 
 Dyna&omega;o and its dependencies will need some packages to work. Here is the list of all packages you can install to have no dependency problem in the following steps. This example works for Ubuntu:
 
@@ -97,3 +202,12 @@ Then you can launch:
 ``` bash
 $> dynawo help
 ```
+
+### Dyna&omega;o Docker environment
+
+We provide on [Docker Hub](https://hub.docker.com/r/dynawo/dynawo) an image of Dyna&omega;o master. You can use it by launching the following command:
+
+``` bash
+$> docker run -it dynawo/dynawo
+```
+You can have more information on how to use Docker to build and try Dyna&omega;o [here](https://github.com/dynawo/dynawo-docker).
