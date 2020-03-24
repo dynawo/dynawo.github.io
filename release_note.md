@@ -19,9 +19,9 @@ New features:
 
 New models:
  
-* Injectors models (BG, I)
+* Source models (injector BG, injector Id/Iq, converter)
 * Network models (ideal switch, bus and dynamic line)
-* Control models (Grid forming converters, PLL).
+* Control models (Grid forming controls, PLL)
 
 3rd parties:
 
