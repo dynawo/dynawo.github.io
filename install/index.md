@@ -27,7 +27,7 @@ Latest release: [Dyna&omega;o v1.1.0]({{ '/release_note' }})
 
 Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip).
 
-Dyna&omega;o is tested on **Fedora** and **Ubuntu** based platforms. 
+Dyna&omega;o is tested on **Fedora** and **Ubuntu** based platforms.
 However, provided that you can install system packages there should be no problem on others Linux distributions.
 
 Required dependencies are the following:
@@ -38,8 +38,6 @@ Required dependencies are the following:
 
 * Utilities: [curl](https://curl.haxx.se) and unzip
 
-* Libraries: [BLAS](http://www.netlib.org/blas/index.html), [LAPACK](http://www.netlib.org/lapack/index.html)
-
 * [CMake](https://cmake.org/) (minimum version 3.9.6)
 
 Following commands can be used to install the required dependencies:
@@ -47,13 +45,13 @@ Following commands can be used to install the required dependencies:
 Ubuntu:
 
 ``` bash
-$> apt-get install -y g++ unzip curl python liblapacke
+$> apt-get install -y g++ unzip curl python
 ```
 
 Fedora:
 
 ``` bash
-$> dnf install -y gcc-c++ unzip curl python lapack
+$> dnf install -y gcc-c++ unzip curl python
 ```
 
 Following commands can be used to download and test the latest distribution:
@@ -70,7 +68,7 @@ $> Dynawo_Linux_latest/bin/execDynawo.sh jobs --help
 
 Official MacOS-based release will be available soon.
 
-Dyna&omega;o is tested on **Mojave 10.14.5** only. 
+Dyna&omega;o is tested on **Mojave 10.14.5** only.
 
 Required dependencies are the following:
 
@@ -88,7 +86,7 @@ Similar commands as the  ones proposed in Linux section can be used to download 
 
 Official Windows-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Windows_v1.1.0.zip).
 
-Dyna&omega;o is tested on **Windows 10**. 
+Dyna&omega;o is tested on **Windows 10**.
 
 If you plan to use Dyna&omega;o with the default models library there is no additional dependency.
 
@@ -102,9 +100,9 @@ If you plan to compile on the fly your own Modelica models then required depende
 
 You can do as follows to download and test Dyna&omega;o:
 
-* Download the zip of the distribution and unzip it somewhere 
+* Download the zip of the distribution and unzip it somewhere
 
-* Open either **Command Prompt** or **x64 Native Tools Command Prompt for VS2019** (to be able to use your own models) 
+* Open either **Command Prompt** or **x64 Native Tools Command Prompt for VS2019** (to be able to use your own models)
 
 * Use **cd** to browse the directory previously unzipped. A file named **dynawo.cmd** should be there.
 
