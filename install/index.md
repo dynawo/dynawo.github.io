@@ -13,13 +13,13 @@ If you have any issue building or using Dyna&omega;o don't hesitate to send us a
 
 Latest release: [Dyna&omega;o v1.1.0]({{ '/release_note' }})
 
-|----------------------------:|---|
-|       Linux distribution | [Dynawo_Linux_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip)  |
-|     Windows distribution (VS2019)  | [Dynawo_Windows_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Windows_v1.1.0.zip)  |
-|       MacOS distribution  | Coming soon  |
-| Documentation | [DynawoDocumentation.pdf](https://github.com/dynawo/dynawo/releases/download/v1.1.0/DynawoDocumentation.pdf)  |
-| Dynawo Modelica library | [Dynawo_Modelica_library_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Modelica_library_v1.1.0.zip)  |
-| Detailed release note  | [v1.1.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.1.0/v1.1.0_release_note.txt)  |
+|---|---|
+| Linux distribution | [Dynawo_Linux_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip) |
+| Windows distribution (VS2019) | [Dynawo_Windows_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Windows_v1.1.0.zip) |
+| MacOS distribution | [Dynawo_MacOS_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_MacOS_v1.1.0.zip) |
+| Documentation | [DynawoDocumentation.pdf](https://github.com/dynawo/dynawo/releases/download/v1.1.0/DynawoDocumentation.pdf) |
+| Dynawo Modelica library | [Dynawo_Modelica_library_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Modelica_library_v1.1.0.zip) |
+| Detailed release note | [v1.1.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.1.0/v1.1.0_release_note.txt) |
 
 
 
