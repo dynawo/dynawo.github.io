@@ -40,6 +40,7 @@ Below is a list of variables that are optional to define in `myEnvDynawo.sh`. Us
 |DYNAWO_LOCALE|Enables to create a different local language for dictionaries.|en_GB|
 |DYNAWO_COMPILER|Choose compiler|GCC (default) or CLANG|
 |DYNAWO_LIBRARY_TYPE|Allow to compile Dyna&omega;o executable and libraries as shared or static objects.|SHARED (default) or STATIC|
+|DYNAWO_PYTHON_COMMAND|`python` commands needs to be in PATH, use this variable to use a different version.|python (default) or python3|
 |DYNAWO_LIBARCHIVE_HOME|Path to a custom install of libarchive.|PATH (default is system one)|
 |DYNAWO_BOOST_HOME|Path to a custom install of Boost.|PATH (default is system one)|
 |DYNAWO_GTEST_HOME|Path to a custom install of GoogleTest.|PATH (default is system one)|

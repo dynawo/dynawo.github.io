@@ -13,13 +13,13 @@ If you have any issue building or using Dyna&omega;o don't hesitate to send us a
 
 Latest release: [Dyna&omega;o v1.1.0]({{ '/release_note' }})
 
-|----------------------------:|---|
-|       Linux distribution | [Dynawo_Linux_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip)  |
-|     Windows distribution (VS2019)  | [Dynawo_Windows_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Windows_v1.1.0.zip)  |
-|       MacOS distribution  | Coming soon  |
-| Documentation | [DynawoDocumentation.pdf](https://github.com/dynawo/dynawo/releases/download/v1.1.0/DynawoDocumentation.pdf)  |
-| Dynawo Modelica library | [Dynawo_Modelica_library_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Modelica_library_v1.1.0.zip)  |
-| Detailed release note  | [v1.1.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.1.0/v1.1.0_release_note.txt)  |
+|---|---|
+| Linux distribution | [Dynawo_Linux_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip) |
+| Windows distribution (VS2019) | [Dynawo_Windows_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Windows_v1.1.0.zip) |
+| MacOS distribution | [Dynawo_MacOS_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_MacOS_v1.1.0.zip) |
+| Documentation | [DynawoDocumentation.pdf](https://github.com/dynawo/dynawo/releases/download/v1.1.0/DynawoDocumentation.pdf) |
+| Dynawo Modelica library | [Dynawo_Modelica_library_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Modelica_library_v1.1.0.zip) |
+| Detailed release note | [v1.1.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.1.0/v1.1.0_release_note.txt) |
 
 
 
@@ -27,7 +27,7 @@ Latest release: [Dyna&omega;o v1.1.0]({{ '/release_note' }})
 
 Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip).
 
-Dyna&omega;o is tested on **Fedora** and **Ubuntu** based platforms. 
+Dyna&omega;o is tested on **Fedora** and **Ubuntu** based platforms.
 However, provided that you can install system packages there should be no problem on others Linux distributions.
 
 Required dependencies are the following:
@@ -70,7 +70,7 @@ $> Dynawo_Linux_latest/bin/execDynawo.sh jobs --help
 
 Official MacOS-based release will be available soon.
 
-Dyna&omega;o is tested on **Mojave 10.14.5** only. 
+Dyna&omega;o is tested on **Mojave 10.14.5** only.
 
 Required dependencies are the following:
 
@@ -88,7 +88,7 @@ Similar commands as the  ones proposed in Linux section can be used to download 
 
 Official Windows-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Windows_v1.1.0.zip).
 
-Dyna&omega;o is tested on **Windows 10**. 
+Dyna&omega;o is tested on **Windows 10**.
 
 If you plan to use Dyna&omega;o with the default models library there is no additional dependency.
 
@@ -102,9 +102,9 @@ If you plan to compile on the fly your own Modelica models then required depende
 
 You can do as follows to download and test Dyna&omega;o:
 
-* Download the zip of the distribution and unzip it somewhere 
+* Download the zip of the distribution and unzip it somewhere
 
-* Open either **Command Prompt** or **x64 Native Tools Command Prompt for VS2019** (to be able to use your own models) 
+* Open either **Command Prompt** or **x64 Native Tools Command Prompt for VS2019** (to be able to use your own models)
 
 * Use **cd** to browse the directory previously unzipped. A file named **dynawo.cmd** should be there.
 
