@@ -66,7 +66,7 @@ $> Dynawo_Linux_latest/bin/execDynawo.sh jobs --help
 
 ### Dyna&omega;o MacOS binaries distribution
 
-Official MacOS-based release will be available soon.
+Official MacOS-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_MacOS_v1.1.0.zip).
 
 Dyna&omega;o is tested on **Mojave 10.14.5** only.
 
