@@ -8,24 +8,27 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
-Dyna&omega;o is available on **Linux**, **Windows** and **MacOS**. You can either build it from sources or use official binaries distributed on Github.
-If you have any issue building or using Dyna&omega;o don't hesitate to send us an [email](mailto:rte-dynawo@rte-france.com) with your errors.
 
-Latest release: [Dyna&omega;o v1.1.0]({{ '/release_note' }})
+Dyna&omega;o is available on **Linux**, **Windows** and **MacOS**.
+The latest release is [Dyna&omega;o v1.2.0]({{ '/release_note' }}) and could be retrieved using the following links:
 
 |---|---|
-| Linux distribution | [Dynawo_Linux_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip) |
-| Windows distribution (VS2019) | [Dynawo_Windows_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Windows_v1.1.0.zip) |
-| MacOS distribution | [Dynawo_MacOS_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_MacOS_v1.1.0.zip) |
-| Documentation | [DynawoDocumentation.pdf](https://github.com/dynawo/dynawo/releases/download/v1.1.0/DynawoDocumentation.pdf) |
-| Dynawo Modelica library | [Dynawo_Modelica_library_v1.1.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Modelica_library_v1.1.0.zip) |
-| Detailed release note | [v1.1.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.1.0/v1.1.0_release_note.txt) |
+| Linux distribution | [Dynawo_Linux_v1.2.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_Linux_v1.2.0.zip) |
+| Windows distribution (VS2019) | [Dynawo_Windows_v1.2.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_Windows_v1.2.0.zip) |
+| MacOS distribution | [Dynawo_MacOS_v1.2.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_MacOS_v1.2.0.zip) |
+| Documentation | [DynawoDocumentation.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/DynawoDocumentation.zip) |
+| Dynawo Modelica library | [Dynawo_Modelica_library_v1.2.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_Modelica_library_v1.2.0.zip) |
+| Detailed release note | [v1.2.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.2.0/v1.2.0_release_note.txt) |
 
 
+To get started with Dyna&omega;o you have different possibilities, depending on your background and what you want to do:
+- If you are interested in the models available and want to have a quick look to them, please open the Dyna&omega;o Modelica library in OpenModelica for example.
+- If you want to launch simulations and examples with Dyna&omega;o and observe the performances, you can use the pre-built distributions and the examples directory.
+- If you want to checkout the repository and build it yourself to be able to modify the tool, please follow the build instructions available.
 
 ### Dyna&omega;o Linux binaries distribution
 
-Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Linux_v1.1.0.zip).
+Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_Linux_v1.2.0.zip).
 
 Dyna&omega;o is tested on **Fedora** and **Ubuntu** based platforms.
 However, provided that you can install system packages there should be no problem on others Linux distributions.
@@ -60,14 +63,14 @@ Following commands can be used to download and test the latest distribution:
 $> curl -L $(curl -s -L -X GET https://api.github.com/repos/dynawo/dynawo/releases/latest | grep "Dynawo_Linux" | grep url | cut -d '"' -f 4) -o Dynawo_Linux_latest.zip
 $> unzip Dynawo_Linux_latest.zip
 $> cd dynawo
-$> ./dynawo.sh jobs-with-curves Dynawo_Linux_latest/testcases/IEEE14/IEEE14_SyntaxExamples/IEEE14_ModelicaModel/IEEE14.jobs
+$> ./dynawo.sh jobs-with-curves sources/examples/DynaWaltz/IEEE14/IEEE14_GeneratorDisconnections/IEEE14.jobs
 $> ./dynawo.sh help
 $> ./dynawo.sh jobs --help
 ```
 
 ### Dyna&omega;o MacOS binaries distribution
 
-Official MacOS-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_MacOS_v1.1.0.zip).
+Official MacOS-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_MacOS_v1.2.0.zip).
 
 Dyna&omega;o is tested on **Mojave 10.14.5** only.
 
@@ -85,7 +88,7 @@ Similar commands as the  ones proposed in Linux section can be used to download 
 
 ### Dyna&omega;o Windows binaries distribution
 
-Official Windows-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.1.0/Dynawo_Windows_v1.1.0.zip).
+Official Windows-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_Windows_v1.2.0.zip).
 
 Dyna&omega;o is tested on **Windows 10**.
 
@@ -110,7 +113,7 @@ You can do as follows to download and test Dyna&omega;o:
 * Use following commands to launch a simulation:
 
 ``` bash
-$> dynawo --jobs-file testcases\IEEE14\IEEE14_BasicTestCases\IEEE14_LoadVariation\IEEE14.jobs
+$> dynawo --jobs-file sources\examples\DynaWaltz\IEEE14\IEEE14_GeneratorDisconnections\IEEE14.jobs
 ```
 
 ### Building Dyna&omega;o from sources on Linux
@@ -161,16 +164,24 @@ $> export HTTP_PROXY=$http_proxy;export HTTPS_PROXY=$https_proxy;export NO_PROXY
 ```
 
 Once you have installed and compiled Dyna&omega;o as explained in the previous
-part, you can launch a simulation by calling:
+part, you can launch a simulation by calling one example from DynaFlow, DynaSwing or DynaWaltz:
 
 ``` bash
-$> ./myEnvDynawo.sh jobs nrt/data/IEEE14/IEEE14_BasicTestCases/IEEE14_DisconnectLine/IEEE14.jobs
+$> ./myEnvDynawo.sh jobs examples/DynaWaltz/IEEE14/IEEE14_GeneratorDisconnections/IEEE14.jobs
+```
+
+``` bash
+$> ./myEnvDynawo.sh jobs examples/DynaSwing/IEEE14/IEEE14_Fault/IEEE14.jobs
+```
+
+``` bash
+$> ./myEnvDynawo.sh jobs examples/DynaFlow/IEEE14/IEEE14_DisconnectLine/IEEE14.jobs
 ```
 
 This command launches a simple simulation on the IEEE 14-bus network that should work if your installation went well and your compilation finished successfully. It could be checked by looking to the outputs directory and comparing its content with the ones from the reference outputs directory (especially the curves file).
 
 ``` bash
-$> cd nrt/data/IEEE14/IEEE14_BasicTestCases/IEEE14_DisconnectLine
+$> cd examples/DynaWaltz/IEEE14/IEEE14_GeneratorDisconnections/
 $> ls outputs
 $> diff outputs/curves/curves.csv reference/outputs/curves/curves.csv
 ```
@@ -180,10 +191,10 @@ All the simulation outputs are stored into the outputs directory.
 It is also possible to display directly simulation results - plots - into a simple GUI (created for demonstration purpose) by using the following command:
 
 ``` bash
-$> ./myEnvDynawo.sh jobs-with-curves nrt/data/IEEE14/IEEE14_BasicTestCases/IEEE14_DisconnectLine/IEEE14.jobs
+$> ./myEnvDynawo.sh jobs-with-curves examples/DynaWaltz/IEEE14/IEEE14_GeneratorDisconnections/IEEE14.jobs
 ```
 
-For example, for this line disconnection, the plot for the voltage module in p.u. on bus 10 should look like this:
+For example, for the generator disconnections simulated with DynaWaltz, the plot for the voltage module in p.u. on bus 1 should look like this:
 
 ![image](../assets/images/VoltageModule.png "Voltage module in p.u. on bus 10"){: .center-image}
 
