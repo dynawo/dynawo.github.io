@@ -9,26 +9,34 @@ layout: default
     license. All rights reserved.
 -->
 
-Dyna&omega;o v1.1.0 main features:
+#### Dyna&omega;o v1.2.0
 
-New features:
- 
-* Windows and MacOS portability (compilation with Visual Studio 2019)
-* Numerical robustness on tough events (automatic generation of modes from Modelica models)
-* Performances improvement (generation of aliased and calculated variables from Modelica models)
+**Main changes:**
 
-New models:
- 
-* Source models (injector BG, injector Id/Iq, converter)
-* Network models (ideal switch, bus and dynamic line)
-* Control models (Grid forming controls, PLL)
+* Creation of an example directory with additional test cases
+* Steady-state calculation models release (restorative load, generators, frequency regulation model - Signal N-, HVDCPTanPhi and HVDCPV)
+* Performance improvement up to 20 % on large-scale simulations (variables simplification, algorithm optimization and implementation improvements).
+* Modeling robustness (handling bad topology, propagation of disconnection signals, data handling improvement)
 
-3rd parties:
+**New features:**
 
-* End of compatibililty with OpenModelica 1.9.4
-* Integration of Modelica 3.2.3
+* New criteria system
+* Complete log refactoring
 
-Testcases:
+**New models:**
 
-* IEEE14 Fault testcase
+* HVDC Standard model
+* Shackshaft  saturation model
+* Steady-state models
+
+**3rd Party:**
+
+* Improvement in Adept integration (better complex handling and support of CombiTable)
+* Python scripts adaptation to Python 3
+* Modelica utilities integration
+
+**Test cases:**
+
+* Full OM grid forming converter and HVDC test cases (in the examples package of the Dynawo library)
+* Examples section in Dynawo (Steady-state calculation examples - DynaFlow, long-term stability examples - DynaWaltz, transient stability examples - DynaSwing).
 

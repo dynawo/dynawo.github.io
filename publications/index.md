@@ -26,6 +26,8 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 
 ### Publications using Dyna&omega;o
 
+* Q. Cossart, F. Rosière, A. Guironnet and M. Saugier, "An Open-Source Implementation of Grid-Forming Converters using Modelica", accepted for 2020 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe)
+
 * L. Razik, L. Schumacher, A. Monti, A. Guironnet, and G. Bureau, “A comparative analysis of LU decomposition methods for power system simulations,” 2019 IEEE Milan PowerTech, Jun. 2019.
 
 * P.-M. Gibert, P. Panciatici, R. Losseau, A. Guironnet, D. Tromeur-Dervout, and J. Erhel, “Speedup of EMT simulations by using an integration scheme enriched with a predictive Fourier coefficients estimator,” 2018 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2018.
@@ -33,6 +35,8 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 * P.-M. Gibert, R. Losseau, A. Guironnet, P. Panciatici, D. Tromeur-Dervout, and J. Erhel, “Use of the Sinusoidal Predictor Method within a Fully Separated Modeler/Solver Framework for Fast and Flexible EMT Simulations,” Proceedings of 8th International Conference on Simulation and Modeling Methodologies, Technologies and Applications, 2018.
 
 ### Publications related to concepts used in Dyna&omega;o
+
+* A. Masoom, T. Ould-Bachir, J. Mahseredjian, A. Guironnet and N. Ding, "Simulation of Electromagnetic Transients with Modelica, Accuracy and Performance Assessment for Transmission Line Models", 2020 PSCC Conference, Porto, Portugal, June 29 - July 3, 2020
 
 * A. Bartolini, F. Casella and A. Guironnet, "Towards Pan-European Power Grids Modelling in Modelica: Design Principles and A Prototype for A Reference Power System Library", Proceedings of the 13th International Modelica Conference, Regensburg, Germany, March 4-6, 2019  
 

@@ -10,27 +10,24 @@ layout: default
 -->
 Below are the major development axis identified for Dyna&omega;o for the next few months, with associated contents and due date. It is important to notice that the development content and the due dates may be subject to change due to unforeseen complexity in implementing features or priority changes.
 
-### Axis 1 - Test cases and models development
+### Axis 1 - Models development
 
-* ~~Adding larger IEEE cases (IEEE14, IEEE57)~~: Available since V0.1.1
-* Adding large scale test cases (national and panEuropean ones): postponed to June 2020
-* ~~Adding new models (proportional and proportional integral VR, proportional governor, static var compensator, PLL, injectors)~~: Available since V1.1.0
-* PV WECC model: under progress, expected April 2020
-* Grid forming converters models: Available in the master branch
-* Nordic32 case: expected June 2020
-* Wind WECC model: expected July 2020
-* HVDC standard model: under progress, expected September 2020
+* ~~Adding new models (proportional and proportional integral VR, proportional governor, static var compensator, PLL, injectors)~~
+* PV and Wind WECC model: under final validation and integration
+* ~~Grid forming converters models, expected April 2020~~ Available since V1.1.0.
+* ~~HVDC standard model: expected September 2020~~: Available since V1.2.0
+* Additional models for steady-state calculations (Static Var Compensator, voltage regulation, etc.): December 2020
 
-### Axis 2 - Dependencies upgrade and cross-platform deployment
+### Axis 2 - Test cases
+* Adding large scale test cases (national and panEuropean ones): internally ready but postponed to December 2020 (anonymisation) for public availability
+* ~~New examples section~~: Available since V1.2.0.
+* Nordic32 case: under development both in full Modelica and Dyna&omega;o format
 
-* ~~Switch to OpenModelica V1.13 version and DAE mode use~~: Available since V1.0.0
+### Axis 3 - Dependencies, architecture and performances
+* ~~Switch to OpenModelica V1.13 version and DAE mode use~~
 * Switch to Sundials V5.0.0 and Suitesparse V5.3.0
-* Switch to a newer IIDM library version: postponed to June 2020
-* ~~Mac and Windows portability~~: Available since V1.1.0
-* ~~Switch to Modelica V3.2.3~~: Available since V1.1.0
-
-### Axis 3 - Dyna&omega;o structure evolution
-* ~~Performance improvement (code optimization, models improvements)~~Available since V1.1.0
-* New initialization strategy: using Modelica initEquations section into Dyna&omega;o: postponed
-* Dyna&omega;o connectivity analysis improvement (system splitting): postponed December 2020
+* Switch to a newer IIDM library version: under progres, expected November 2020
+* Performances improvements: under progress
+* Ancilarry services - contingency analysis and margin calculation: under progress
+* Dyna&omega;o connectivity analysis improvement (system splitting): postponed 2021
 
