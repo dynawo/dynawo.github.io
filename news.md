@@ -10,18 +10,9 @@ layout: default
 -->
 
 <a name="news4"></a>
-#### Dyna&omega;o becomes a suite of simulation tools
+#### IEEE PES General Meeting presentation
 
-**Dyna&omega;o 's primary focus has been on long-term and short-term stability studies** but the very encouraging results obtained and the flexibility of the approach led to **an extension of the initiative. Dyna&omega;o  is now evolving towards a complete and coherent suite of simulation tools**, sharing the same philosophy:
-  - **[DynaFlow]({{ '/about/dynaflow' }})** for steady-state calculations
-  - **[DySym]({{ '/about/dysym' }})** for short-circuit calculations
-  - **[DynaWaltz]({{ '/about/dynawaltz' }})** for long-term stability simulations
-  - **[DynaSwing]({{ '/about/dynaswing' }})** for short-term stability studies
-  - **[DynaWave]({{ '/about/dynawave' }})** for stability studies and system design with a high-penetration of power-electronics based components (quasi-EMT)
-
-![image](../assets/images/DynawoLogos.png){: width="70%" .center-image}
-
-Go to their specific web page to learn more about each simulation tool: **[DynaFlow]({{ '/about/dynaflow' }})**, **[DySym]({{ '/about/dysym' }})**, **[DynaWaltz]({{ '/about/dynawaltz' }})**, **[DynaSwing]({{ '/about/dynaswing' }})** and **[DynaWave]({{ '/about/dynawave' }})**.
+A presentation on the Dyna&omega;o approach is scheduled at the next IEEE PES General Meeting conference, that will be held virtually during August 2020. The presentation is included into a very nice panel session on "Numerical challenges in multi-energy simulations" and is entitled **"Speed-up of Modelica based large-scale simulations, the example of the open-source tool Dyna&omega;o".** It explains the main principles of the approach before going into more details on the advanced strategies used in Dyna&omega;o to reach performances compatible with an industrial use. **If you have registered for the conference, the presentation is available [here](https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?uimode=nextgeneration&eventid=2462049&sessionid=1&key=98CD1C81776A198D3BF0C7A11E3852EC&contenttype=A&eventuserid=305999&playerwidth=1000&playerheight=650&caller=previewLobby&text_language_id=en&format=fhvideo1&newConsole=true#).**
 
 <a name="news3"></a>
 #### Dyna&omega;o v1.2.0 release
@@ -37,9 +28,18 @@ In addition to these new features, new models and test cases are also available 
 The full details concerning the release content is available [here]({{ '/release_note' }}) and the different distributions could be retrieved from the [Try/Install]({{ '/install' }}) page.
 
 <a name="news2"></a>
-#### IEEE PES General Meeting presentation
+#### Dyna&omega;o becomes a suite of simulation tools
 
-A presentation on the Dyna&omega;o approach is scheduled at the next IEEE PES General Meeting conference, that will be held virtually during August 2020. The presentation is included into a very nice panel session on "Numerical challenges in multi-energy simulations" and is entitled **"Speed-up of Modelica based large-scale simulations, the example of the open-source tool Dyna&omega;o".** It explains the main principles of the approach before going into more details on the advanced strategies used in Dyna&omega;o to reach performances compatible with an industrial use. **If you have registered for the conference, the presentation is available [here](https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?uimode=nextgeneration&eventid=2462049&sessionid=1&key=98CD1C81776A198D3BF0C7A11E3852EC&contenttype=A&eventuserid=305999&playerwidth=1000&playerheight=650&caller=previewLobby&text_language_id=en&format=fhvideo1&newConsole=true#).**
+**Dyna&omega;o 's primary focus has been on long-term and short-term stability studies** but the very encouraging results obtained and the flexibility of the approach led to **an extension of the initiative. Dyna&omega;o  is now evolving towards a complete and coherent suite of simulation tools**, sharing the same philosophy:
+  - **[DynaFlow]({{ '/about/dynaflow' }})** for steady-state calculations
+  - **[DySym]({{ '/about/dysym' }})** for short-circuit calculations
+  - **[DynaWaltz]({{ '/about/dynawaltz' }})** for long-term stability simulations
+  - **[DynaSwing]({{ '/about/dynaswing' }})** for short-term stability studies
+  - **[DynaWave]({{ '/about/dynawave' }})** for stability studies and system design with a high-penetration of power-electronics based components (quasi-EMT)
+
+![image](../assets/images/DynawoLogos.png){: width="70%" .center-image}
+
+Go to their specific web page to learn more about each simulation tool: **[DynaFlow]({{ '/about/dynaflow' }})**, **[DySym]({{ '/about/dysym' }})**, **[DynaWaltz]({{ '/about/dynawaltz' }})**, **[DynaSwing]({{ '/about/dynaswing' }})** and **[DynaWave]({{ '/about/dynawave' }})**.
 
 <a name="news1"></a>
 #### OpenModelica workshop
