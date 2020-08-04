@@ -37,7 +37,7 @@ Required dependencies are the following:
 
 * Compilers: C and C++ ([gcc](https://www.gnu.org/software/gcc) or [clang](https://clang.llvm.org)), c++98 or c++11 compatible for C++ standard
 
-* Python 2.7
+* Python2 or Python3
 
 * Utilities: [curl](https://curl.haxx.se) and unzip
 
@@ -100,7 +100,7 @@ If you plan to compile on the fly your own Modelica models then required depende
 
 * [CMake](https://cmake.org/) (minimum version 3.9.6)
 
-* [Python2](https://www.python.org/ftp/python/2.7.17/python-2.7.17.amd64.msi)
+* [Python2](https://www.python.org/ftp/python/2.7.17/python-2.7.17.amd64.msi) or [Python3](https://www.python.org/ftp/python/3.8.5/python-3.8.5-amd64.exe)
 
 You can do as follows to download and test Dyna&omega;o:
 
