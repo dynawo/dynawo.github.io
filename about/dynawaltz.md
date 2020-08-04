@@ -19,4 +19,4 @@ Most of the classical approaches for long-term stability studies use simplified 
 
 For more details on DynaWaltz behavior, please have a look to [our use cases documentation](https://github.com/dynawo/dynawo/releases/download/v1.2.0/DynawoDocumentation.zip).
 
-![image](../assets/images/DynaWaltz.png){: width="40%" .center-image}
+![image](../assets/images/DynaWaltz.png){: width="50%" .center-image}

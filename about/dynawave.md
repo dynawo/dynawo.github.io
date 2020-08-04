@@ -17,4 +17,4 @@ The aim of DynaWave is to propose a new simulation frame to correctly capture fa
 
 The development and release of some grid-forming controllers strategies and of dynamic lines are the first steps on which DynaWave will be built. They allow to simulate in a completely open-source environment the three nodes test case used in the [Migrate project](https://www.h2020-migrate.eu/) to study interactions between different grid-forming controllers (the test case is under final validation but will be released soon). **The idea is to build upon this first basis to develop more open-source models, in collaboration with our partner and colleagues conducting researches on stability of power systems with a high-share of power-electronics based components.** DynaWave will provide a flexible and open-source simulation tool to ease technical discussions and collaborations in order to face the future stability challenges arising in power-electronics based system.
 
-![image](../assets/images/DynaWave.png){: width="40%" .center-image}
+![image](../assets/images/DynaWave.png){: width="50%" .center-image}
