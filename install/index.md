@@ -9,13 +9,12 @@ layout: default
     license. All rights reserved.
 -->
 
-Dyna&omega;o is available on **Linux**, **Windows** and **MacOS**.
+Dyna&omega;o is available on **Linux** and **Windows**. For **MacOS** users we recommend to use [Docker](#docker).
 The latest release is [Dyna&omega;o v1.2.0]({{ '/release_note' }}) and could be retrieved using the following links:
 
 |---|---|
 | Linux distribution | [Dynawo_Linux_v1.2.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_Linux_v1.2.0.zip) |
 | Windows distribution (VS2019) | [Dynawo_Windows_v1.2.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_Windows_v1.2.0.zip) |
-| MacOS distribution | [Dynawo_MacOS_v1.2.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_MacOS_v1.2.0.zip) |
 | Documentation | [DynawoDocumentation.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/DynawoDocumentation.zip) |
 | Dynawo Modelica library | [Dynawo_Modelica_library_v1.2.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_Modelica_library_v1.2.0.zip) |
 | Detailed release note | [v1.2.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.2.0/v1.2.0_release_note.txt) |
@@ -67,24 +66,6 @@ $> ./dynawo.sh jobs-with-curves sources/examples/DynaWaltz/IEEE14/IEEE14_Generat
 $> ./dynawo.sh help
 $> ./dynawo.sh jobs --help
 ```
-
-### Dyna&omega;o MacOS binaries distribution
-
-Official MacOS-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.2.0/Dynawo_MacOS_v1.2.0.zip).
-
-Dyna&omega;o is tested on **Mojave 10.14.5** only.
-
-Required dependencies are the following:
-
-* [CMake](https://cmake.org/) (minimum version 3.9.6)
-
-* Command Line Tools
-
-``` bash
-$> xcode-select --install
-```
-
-Similar commands as the  ones proposed in Linux section can be used to download and test Dyna&omega;o.
 
 ### Dyna&omega;o Windows binaries distribution
 
@@ -215,6 +196,7 @@ $> dynawo help
 ```
 
 ### Dyna&omega;o Docker environment
+<a name="docker"></a>
 
 We provide on [Docker Hub](https://hub.docker.com/r/dynawo/dynawo) an image of Dyna&omega;o master. You can use it by launching the following command:
 
