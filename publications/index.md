@@ -26,7 +26,11 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 
 ### Publications using Dyna&omega;o
 
-* Q. Cossart, F. Rosière, A. Guironnet and M. Saugier, "An Open-Source Implementation of Grid-Forming Converters using Modelica", accepted for 2020 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe)
+* A. Masoom, A. Guironnet, A. Zeghaida, T. Ould-Bachir, and J. Mahseredjian, "Modelica-based Electromagnetic Transients Simulation Using Dyna&omega;o: Current Status and Perspectives", accepted for 2021 International Conference on Power System Transients (IPST), June 2021
+
+* A. Guironnet, F. Rosière, G. Bureau, M. Saugier, Q. Cossart, M. Chiaramello, M. Bongrain and I. Menezes, "Dyna&omega;o: A Suite of Power System Simulation Tools using Modelica and the Open Modelica Compiler", 2021 OpenModelica Workshop, Feb. 2021
+
+* Q. Cossart, F. Rosière, A. Guironnet and M. Saugier, "An Open-Source Implementation of Grid-Forming Converters using Modelica", 2020 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2020.
 
 * L. Razik, L. Schumacher, A. Monti, A. Guironnet, and G. Bureau, “A comparative analysis of LU decomposition methods for power system simulations,” 2019 IEEE Milan PowerTech, Jun. 2019.
 
