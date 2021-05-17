@@ -22,21 +22,25 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 	booktitle = {2018 {IEEE} {PES} Innovative Smart Grid Technologies Conference Europe ({ISGT}-Europe)}
 }
 ```
-* A. Guironnet, M. Saugier, S. Petitrenaud, F. Xavier, and P. Panciatici, “Towards an Open-Source Solution using Modelica for Time-Domain Simulation of Power Systems,” 2018 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2018.
+* A. Guironnet, M. Saugier, S. Petitrenaud, F. Xavier, and P. Panciatici, [“Towards an Open-Source Solution using Modelica for Time-Domain Simulation of Power Systems”](https://www.researchgate.net/publication/330234929_Towards_an_Open-Source_Solution_using_Modelica_for_Time-Domain_Simulation_of_Power_Systems), 2018 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2018.
 
 ### Publications using Dyna&omega;o
 
-* A. Masoom, A. Guironnet, A. Zeghaida, T. Ould-Bachir, and J. Mahseredjian, "Modelica-based Electromagnetic Transients Simulation Using Dyna&omega;o: Current Status and Perspectives", accepted for 2021 International Conference on Power System Transients (IPST), June 2021
+* Q. Cossart, M. Chiaramello, A. Guironnet and P. Panciatici, "A Novel Approach for the Calculation of Steady States in Transmission Systems Using Simplified Time-Domain Simulation", accepted for IEEE Madrid PowerTech, June 2021
 
-* A. Guironnet, F. Rosière, G. Bureau, M. Saugier, Q. Cossart, M. Chiaramello, M. Bongrain and I. Menezes, "Dyna&omega;o: A Suite of Power System Simulation Tools using Modelica and the Open Modelica Compiler", 2021 OpenModelica Workshop, Feb. 2021
+* Q. Cossart, M. Saugier and A. Guironnet, "An Open-Source Average HVDC Model for Stability Studies", accepted for IEEE Madrid PowerTech, June 2021
 
-* Q. Cossart, F. Rosière, A. Guironnet and M. Saugier, "An Open-Source Implementation of Grid-Forming Converters using Modelica", 2020 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2020.
+* A. Masoom, A. Guironnet, A. Zeghaida, T. Ould-Bachir, and J. Mahseredjian, "Modelica-based Simulation of Electromagnetic Transients Using Dyna&omega;o: Current Status and Perspectives", Electric Power Systems Research, Volume 197, August 2021
 
-* L. Razik, L. Schumacher, A. Monti, A. Guironnet, and G. Bureau, “A comparative analysis of LU decomposition methods for power system simulations,” 2019 IEEE Milan PowerTech, Jun. 2019.
+* A. Guironnet, F. Rosière, G. Bureau, M. Saugier, Q. Cossart, M. Chiaramello, M. Bongrain and I. Menezes, ["Dyna&omega;o: A Suite of Power System Simulation Tools using Modelica and the Open Modelica Compiler"](https://www.researchgate.net/publication/349057603_Dynaoo_A_Suite_of_Power_System_Simulation_Tools_using_Modelica_and_the_Open_Modelica_Compiler?ev=project), 2021 OpenModelica Workshop, Feb. 2021
 
-* P.-M. Gibert, P. Panciatici, R. Losseau, A. Guironnet, D. Tromeur-Dervout, and J. Erhel, “Speedup of EMT simulations by using an integration scheme enriched with a predictive Fourier coefficients estimator,” 2018 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2018.
+* Q. Cossart, F. Rosière, A. Guironnet and M. Saugier, ["An Open-Source Implementation of Grid-Forming Converters using Modelica"](https://www.researchgate.net/publication/346523888_An_Open-Source_Implementation_of_Grid-Forming_Converters_Using_Modelica), 2020 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2020.
 
-* P.-M. Gibert, R. Losseau, A. Guironnet, P. Panciatici, D. Tromeur-Dervout, and J. Erhel, “Use of the Sinusoidal Predictor Method within a Fully Separated Modeler/Solver Framework for Fast and Flexible EMT Simulations,” Proceedings of 8th International Conference on Simulation and Modeling Methodologies, Technologies and Applications, 2018.
+* L. Razik, L. Schumacher, A. Monti, A. Guironnet, and G. Bureau, [“A comparative analysis of LU decomposition methods for power system simulations”](https://www.researchgate.net/publication/335426237_A_comparative_analysis_of_LU_decomposition_methods_for_power_system_simulations?ev=project), 2019 IEEE Milano PowerTech, June 2019.
+
+* P.-M. Gibert, P. Panciatici, R. Losseau, A. Guironnet, D. Tromeur-Dervout, and J. Erhel, [“Speedup of EMT simulations by using an integration scheme enriched with a predictive Fourier coefficients estimator”](https://www.researchgate.net/publication/330231209_Speedup_of_EMT_simulations_by_using_an_integration_scheme_enriched_with_a_predictive_Fourier_coefficients_estimator), 2018 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), Oct. 2018.
+
+* P.-M. Gibert, R. Losseau, A. Guironnet, P. Panciatici, D. Tromeur-Dervout, and J. Erhel, [“Use of the Sinusoidal Predictor Method within a Fully Separated Modeler/Solver Framework for Fast and Flexible EMT Simulations”](https://www.researchgate.net/publication/326867877_Use_of_the_Sinusoidal_Predictor_Method_within_a_Fully_Separated_ModelerSolver_Framework_for_Fast_and_Flexible_EMT_Simulations?ev=project), Proceedings of 8th International Conference on Simulation and Modeling Methodologies, Technologies and Applications, 2018.
 
 ### Publications related to concepts used in Dyna&omega;o
 
