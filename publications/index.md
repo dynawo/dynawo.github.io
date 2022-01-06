@@ -26,11 +26,15 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 
 ### Publications using Dyna&omega;o
 
-* Q. Cossart, M. Chiaramello, A. Guironnet and P. Panciatici, "A Novel Approach for the Calculation of Steady States in Transmission Systems Using Simplified Time-Domain Simulation", accepted for IEEE Madrid PowerTech, June 2021
+* M. Nuschke, S. Lohr, A. Guironnet and M. Saugier, ["Implementation and Validation of the Generic WECC Photovoltaics and Wind Turbine Generator Models in Modelica"](https://www.researchgate.net/publication/354751869_Implementation_and_Validation_of_the_Generic_WECC_Photovoltaics_and_Wind_Turbine_Generator_Models_in_Modelica), 14th International Modelica Conference, online, September 2021
 
-* Q. Cossart, M. Saugier and A. Guironnet, "An Open-Source Average HVDC Model for Stability Studies", accepted for IEEE Madrid PowerTech, June 2021
+* A. Guironnet, F. Rosière, G. Bureau and M. Saugier, ["Speed-up Of Large-Scale Voltage Stability Simulations within a Fully Separated Modeler/Solver Framework"](https://www.researchgate.net/publication/354473311_Speed-up_Of_Large-Scale_Voltage_Stability_Simulations_within_a_Fully_Separated_ModelerSolver_Framework), 4th International Conference on Smart Energy Systems and Technologies (SEST), online, September 2021
 
-* A. Masoom, A. Guironnet, A. Zeghaida, T. Ould-Bachir, and J. Mahseredjian, "Modelica-based Simulation of Electromagnetic Transients Using Dyna&omega;o: Current Status and Perspectives", Electric Power Systems Research, Volume 197, August 2021
+* A. Masoom, A. Guironnet, A. Zeghaida, T. Ould-Bachir, and J. Mahseredjian, ["Modelica-based Simulation of Electromagnetic Transients Using Dyna&omega;o: Current Status and Perspectives"](https://www.researchgate.net/publication/351612919_Modelica-based_simulation_of_electromagnetic_transients_using_Dynaoo_Current_status_and_perspectives),  Electric Power Systems Research, Volume 197, August 2021
+
+* Q. Cossart, M. Chiaramello, A. Guironnet and P. Panciatici, ["A Novel Approach for the Calculation of Steady States in Transmission Systems Using Simplified Time-Domain Simulation"](https://www.researchgate.net/publication/352836499_A_Novel_Approach_for_the_Calculation_of_Steady_States_in_Transmission_Systems_Using_Simplified_Time-Domain_Simulation),  IEEE PowerTech 2021, Madrid, June 2021
+
+* Q. Cossart, M. Saugier and A. Guironnet, [An Open-Source Average HVDC Model for Stability Studies"](https://www.researchgate.net/publication/352836509_An_Open-Source_Average_HVDC_Model_for_Stability_Studies), IEEE PowerTech 2021, Madrid, June 2021
 
 * A. Guironnet, F. Rosière, G. Bureau, M. Saugier, Q. Cossart, M. Chiaramello, M. Bongrain and I. Menezes, ["Dyna&omega;o: A Suite of Power System Simulation Tools using Modelica and the Open Modelica Compiler"](https://www.researchgate.net/publication/349057603_Dynaoo_A_Suite_of_Power_System_Simulation_Tools_using_Modelica_and_the_Open_Modelica_Compiler?ev=project), 2021 OpenModelica Workshop, Feb. 2021
 
@@ -43,6 +47,10 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 * P.-M. Gibert, R. Losseau, A. Guironnet, P. Panciatici, D. Tromeur-Dervout, and J. Erhel, [“Use of the Sinusoidal Predictor Method within a Fully Separated Modeler/Solver Framework for Fast and Flexible EMT Simulations”](https://www.researchgate.net/publication/326867877_Use_of_the_Sinusoidal_Predictor_Method_within_a_Fully_Separated_ModelerSolver_Framework_for_Fast_and_Flexible_EMT_Simulations?ev=project), Proceedings of 8th International Conference on Simulation and Modeling Methodologies, Technologies and Applications, 2018.
 
 ### Publications related to concepts used in Dyna&omega;o
+
+* F. Casella and A. Guironnet, "ScalableTestGrids -An Open-Source and Flexible Benchmark Suite to Assess Modelica Tool Performance on Large-Scale Power System Test Cases", 14th International Modelica Conference, online, September 2021
+
+* A. Masoom, T. Ould-Bachir, J. Mahseredjian and A. Guironnet, "Electromagnetic Transient Simulation of Large Power Networks with Modelica", 14th International Modelica Conference, online, September 2021
 
 * A. Masoom, T. Ould-Bachir, J. Mahseredjian, A. Guironnet and N. Ding, "Simulation of Electromagnetic Transients with Modelica, Accuracy and Performance Assessment for Transmission Line Models", 2020 PSCC Conference, Porto, Portugal, June 29 - July 3, 2020
 
