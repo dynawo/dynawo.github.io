@@ -25,7 +25,7 @@ It is an ongoing project based on previous works conducted particularly in two R
 
 ![image](assets/images/DynawoLogos.png){: width="70%" .center-image}
 
-**Only validated models, numerical methods and test cases are included into the [official release]({{ '/release_note' }}).** We plan to release [additional features]({{ '/roadmap' }}) in the near future, including for example additional models (standard wind and solar power plant models, new regulations for synchronous machines, etc.), new test cases (Nordic32 test case, large-scale test cases) or more functionalities (contingency analysis, critical time clearing algorithm).
+**Only validated models, numerical methods and test cases are included into the [official release]({{ '/release_note' }}).** We plan to release [additional features]({{ '/roadmap' }}) in the near future, including for example additional models (IEC wind model, SPS models, etc.), new test cases (Nordic32 test case, IEEE test cases) or more functionalities (critical time clearing algorithm).
 
 Dyna&omega;o is an open source project licensed under the terms of the [Mozilla Public License](http://mozilla.org/MPL/2.0), v. 2.0.
 The source code is hosted into a GitHub [repository](https://github.com/dynawo/dynawo).
