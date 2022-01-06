@@ -8,11 +8,13 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
-<a name="Features"></a>
+<a name="OperationalUse"></a>
 
 #### Operational use in French control centers
 
 **DynaWaltz, the tool for long-term stability studies of the Dyna&omega;o suite, is now available operationally in the French control centers**. Integrated into RTE's ernergy management system, it has been used to conduct previsional studies for voltage stability before the winter as well as for some day to day studies. The tool behavior has been very satisfactory with an improved accuracy leading to an increase in the operational margins and similar performances than RTE's historical tool. It is an important step for the project, paving the way for the operational adoption of the approach.
+
+<a name="Features"></a>
 
 #### Companion Projects
 
