@@ -14,6 +14,12 @@ layout: default
 
 **DynaWaltz, the tool for long-term stability studies of the Dyna&omega;o suite, is now available operationally in the French control centers**. Integrated into RTE's ernergy management system, it has been used to conduct previsional studies for voltage stability before the winter as well as for some day to day studies. The tool behavior has been very satisfactory with an improved accuracy leading to an increase in the operational margins and similar performances than RTE's historical tool. It is an important step for the project, paving the way for the operational adoption of the approach.
 
+<a name="V1.3.0Release"></a>
+
+#### New release (V1.3.0) available
+
+**A new release - V1.3.0 - is now available with a lot of new features and possibilities.**. This version notably contains a large number of new models (both for short-term, long-term and steady state calculations), a new numerical method (an implementation of the trapezoidal method) and a wide range of diverse improvements: better criteria support, new APIs (lost equipments, final values), a better support of the Modelica language, and some bug fixes. In addition, the number of examples delivered with the tool has been considerably increased: ENTSO-E digital controller test case, WSCC 9 bus test system, WECC test cases, etc. 
+
 <a name="Features"></a>
 
 #### Companion Projects

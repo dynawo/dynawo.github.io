@@ -26,6 +26,8 @@ If you use Dyna&omega;o in your work or research, please quote the following pap
 
 ### Publications using Dyna&omega;o
 
+* J.L. Marin, V. Gaitan, G. Oms, M. Chiaramello, Q. Cossart and A. Guironnet, ["An Open Source Tool to Compare Simulators on Large-Scale Cases - Application to Dynawo"](https://www.researchgate.net/publication/360175983_An_Open_Source_Tool_to_Compare_Simulators_on_Large-Scale_Cases_-_Application_to_Dynawo), 1st International Workshop on Open Source Modelling and Simulation of Energy Systems, Aachen, April 2022 
+
 * M. Nuschke, S. Lohr, A. Guironnet and M. Saugier, ["Implementation and Validation of the Generic WECC Photovoltaics and Wind Turbine Generator Models in Modelica"](https://www.researchgate.net/publication/354751869_Implementation_and_Validation_of_the_Generic_WECC_Photovoltaics_and_Wind_Turbine_Generator_Models_in_Modelica), 14th International Modelica Conference, online, September 2021
 
 * A. Guironnet, F. Rosière, G. Bureau and M. Saugier, ["Speed-up Of Large-Scale Voltage Stability Simulations within a Fully Separated Modeler/Solver Framework"](https://www.researchgate.net/publication/354473311_Speed-up_Of_Large-Scale_Voltage_Stability_Simulations_within_a_Fully_Separated_ModelerSolver_Framework), 4th International Conference on Smart Energy Systems and Technologies (SEST), online, September 2021
