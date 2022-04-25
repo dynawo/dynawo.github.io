@@ -25,16 +25,18 @@ It is an ongoing project based on previous works conducted particularly in two R
 
 ![image](assets/images/DynawoLogos.png){: width="70%" .center-image}
 
-**Only validated models, numerical methods and test cases are included into the [official release]({{ '/release_note' }}).** We plan to release [additional features]({{ '/roadmap' }}) in the near future, including for example additional models (IEC wind model, SPS models, etc.), new test cases (Nordic32 test case, IEEE test cases) or more functionalities (critical time clearing algorithm).
+**Only validated models, numerical methods and test cases are included into the [official release]({{ '/release_note' }}).** We plan to release [additional features]({{ '/roadmap' }}) in the near future, including for example additional models (IEC wind model, SPS models, etc.), or new test cases (Nordic32 test case, IEEE test cases).
+
+In addition to the Dyna&omega;o repository, you can have a look to our new [dynawo-algorithms repository](https://github.com/dynawo/dynawo-algorithms), enabling to launch contingency analysis, voltage margin  or critical clearing time calculations.
 
 Dyna&omega;o is an open source project licensed under the terms of the [Mozilla Public License](http://mozilla.org/MPL/2.0), v. 2.0.
 The source code is hosted into a GitHub [repository](https://github.com/dynawo/dynawo).
 
 Dyna&omega;o is using some external libraries to run simulations:
 * [OpenModelica](https://www.openmodelica.org/), a Modelica environment developed and maintained by the Open Source Modelica Consortium distributed under a GPL V3.0 or OSMC Public License V1.2. The current version used is V1.13.2.
-* [SUNDIALS](https://computation.llnl.gov/projects/sundials), a suite of solvers developed and maintained by the Lawrence Livermore National Lab and distributed under a BSD-3-Clause license. The 4.1.0 version is currently used.
-* [SuiteSparse](http://faculty.cse.tamu.edu/davis/suitesparse.html), and in particular KLU, a LU decomposition library that is part of the suite sparse project, developed and maintained by T. A. Davis et al. at the University of Florida distributed under a LGPL-2.1+. The version 4.5.4 of suite sparse is the one used by Dyna&omega;o.
-* [Adept](http://www.met.reading.ac.uk/clouds/adept/), an automatic differentiation library that has been developed and maintained at the University of Reading by R.J. Hogan distributed under Apache-2.0. It is the version 2.0.5 that is integrated into Dyna&omega;o.
+* [SUNDIALS](https://computation.llnl.gov/projects/sundials), a suite of solvers developed and maintained by the Lawrence Livermore National Lab and distributed under a BSD-3-Clause license. The 5.3.0 version is currently used.
+* [SuiteSparse](http://faculty.cse.tamu.edu/davis/suitesparse.html), and in particular KLU, a LU decomposition library that is part of the suite sparse project, developed and maintained by T. A. Davis et al. at the University of Florida distributed under a LGPL-2.1+. The version 5.4.0 of suite sparse is the one used by Dyna&omega;o.
+* [Adept](http://www.met.reading.ac.uk/clouds/adept/), an automatic differentiation library that has been developed and maintained at the University of Reading by R.J. Hogan distributed under Apache-2.0. It is the version 2.0.8 that is integrated into Dyna&omega;o.
 * [Xerces-C++](http://xerces.apache.org/xerces-c/) a validating XML parser written in a portable subset of C++ and distributed under the Apache Software License, Version 2.0. The current version used is 3.2.2.
 * [NICSLU](http://nicslu.weebly.com/) which is another LU decomposition library. It is developed and maintained by Tsinghua University and is optional at the moment into Dyna&omega;o. It is distributed under a GNU LGPL license.
 * [jQuery](https://jquery.com/) that is distributed into Dyna&omega;o to display results into a minimalistic GUI after the simulation. The current version used is the 1.3.4 distributed under both a MIT and a GPL license.

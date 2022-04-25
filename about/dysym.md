@@ -15,6 +15,6 @@ Until the recent years, the power system short-circuit behavior was mainly drive
 
 **Our ambition with DySym is to provide a short-circuit simulation tool that is adapted to the current and future power system operators needs.** Through a time-domain approach correctly representing the different power system components and their contribution during the short-circuit, the user will have the possibility to output different values to further analyze the system behavior.
 
-**DySym is at a research stage and we are currently playing around with different models to see which hypothesis make sense and which modelling choices should be done.** We plan to release a work plan at the beginning of next year to distribute a proof-of-concept tool next summer.
+**DySym is at a research stage and we are currently playing around with different models to see which hypothesis make sense and which modelling choices should be done.**  We plan to release a work plan as soon as possible and then distribute a first proof of concept. Don't hesitate to have a look to our website to see the current status.
 
 ![image](../assets/images/DySym.png){: width="50%" .center-image}
