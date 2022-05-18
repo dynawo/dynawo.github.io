@@ -13,7 +13,7 @@ Dyna&omega;o is available on **Linux** and **Windows**. For **MacOS** users we r
 The latest release is [Dyna&omega;o v1.3.0]({{ '/release_note' }}) and could be retrieved using the following links:
 
 |---|---|
-| Linux distribution | [Dynawo_Linux_v1.3.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.3.0/Dynawo_Linux_v1.3.0.zip) |
+| Linux distribution | [Dynawo_Linux_v1.3.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.3.0/Dynawo_Linux_cxx11_v1.3.0.zip) |
 | Windows distribution (VS2019) | [Dynawo_Windows_v1.3.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.3.0/Dynawo_Windows_v1.3.0.zip) |
 | Documentation | [DynawoDocumentation.zip](https://github.com/dynawo/dynawo/releases/download/v1.3.0/DynawoDocumentation.zip) |
 | Dynawo Modelica library | [Dynawo_Modelica_library_v1.3.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.3.0/Dynawo_Modelica_library_v1.3.0.zip) |
@@ -27,7 +27,7 @@ To get started with Dyna&omega;o you have different possibilities, depending on 
 
 ### Dyna&omega;o Linux binaries distribution
 
-Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.3.0/Dynawo_Linux_v1.3.0.zip).
+Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.3.0/Dynawo_Linux_cxx11_v1.3.0.zip).
 
 Dyna&omega;o is tested on **Fedora** and **Ubuntu** based platforms.
 However, provided that you can install system packages there should be no problem on others Linux distributions.
