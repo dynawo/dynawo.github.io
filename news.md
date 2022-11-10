@@ -8,6 +8,12 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
+<a name="V1.3.1Release"></a>
+
+#### New release (V1.3.1) available
+
+**A new release - V1.3.1 - is now available.**. This version notably contains a new event model, improvements of Hvdcs and generators modeling, the possibility to filter duplicated events in the timeline, and some bug fixes.
+
 <a name="OperationalUse"></a>
 
 #### Operational use in French control centers

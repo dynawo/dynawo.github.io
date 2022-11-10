@@ -12,4 +12,4 @@ The documentation explains how to install Dyna&omega;o, how to configure it to s
 
 For the moment only a PDF version of the documentation is available.
 
-Download [Dyna&omega;o Documentation](https://github.com/dynawo/dynawo/releases/download/v1.3.0/DynawoDocumentation.zip).
+Download [Dyna&omega;o Documentation](https://github.com/dynawo/dynawo/releases/download/v1.3.1/DynawoDocumentation.zip).
