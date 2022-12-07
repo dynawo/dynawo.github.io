@@ -8,6 +8,12 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
+<a name="V1.3.2Release"></a>
+
+#### New release (V1.3.2) available
+
+**A new release - V1.3.2 - is now available.**. This version notably contains fixes for Windows distribution.
+
 <a name="V1.3.1Release"></a>
 
 #### New release (V1.3.1) available

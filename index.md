@@ -27,7 +27,7 @@ It is an ongoing project based on previous works conducted particularly in two R
 
 **Only validated models, numerical methods and test cases are included into the [official release]({{ '/release_note' }}).** We plan to release [additional features]({{ '/roadmap' }}) in the near future, including for example additional models (IEC wind model, SPS models, etc.), or new test cases (Nordic32 test case, IEEE test cases).
 
-In addition to the Dyna&omega;o repository, you can have a look to our new [dynawo-algorithms repository](https://github.com/dynawo/dynawo-algorithms), enabling to launch contingency analysis, voltage margin  or critical clearing time calculations.
+In addition to the Dyna&omega;o repository, you can have a look to [Dynawo-algorithms]({{ '/about/dynalgo' }}), enabling to launch contingency analysis, voltage margin  or critical clearing time calculations or to [Dynaflow-launcher]({{ '/about/dfl' }}), enabling to launch DynaFlow with a minimal set of inputs.
 
 Dyna&omega;o is an open source project licensed under the terms of the [Mozilla Public License](http://mozilla.org/MPL/2.0), v. 2.0.
 The source code is hosted into a GitHub [repository](https://github.com/dynawo/dynawo).
@@ -42,4 +42,6 @@ Dyna&omega;o is using some external libraries to run simulations:
 * [PowSyBl - iidm4cpp](https://www.powsybl.org/pages/documentation/developer/repositories/powsybl-iidm4cpp.html), a C++ implementation of the IIDM grid model and distributed under the MPL License, Version 2.0. The current version used is 1.4.0.
 * [NICSLU](http://nicslu.weebly.com/) which is another LU decomposition library. It is developed and maintained by Tsinghua University and is optional at the moment into Dyna&omega;o. It is distributed under a GNU LGPL license.
 * [jQuery](https://jquery.com/) that is distributed into Dyna&omega;o to display results into a minimalistic GUI after the simulation. The current version used is the 1.3.4 distributed under both a MIT and a GPL license.
-* [cpplint](https://github.com/google/styleguide/tree/gh-pages/cpplint), a tool used during Dyna&omega;o compilation process to ensure that the C++ files follow the Google's C++ style. It is distributed under a CC-By 3.0 License.
+* [cpplint](https://github.com/google/styleguide/tree/gh-pages/cpplint), a collection of a high-performance multi-threaded malloc implementations distributed under the BSD license. Dynaωo-algorithms is currently using the version 2.6.1.
+* [gperftools](https://github.com/gperftools/gperftools), a collection of a high-performance multi-threaded malloc implementations distributed under the BSD license. Dynaωo-algorithms is currently using the version 2.6.1.
+* [MPICH](https://www.mpich.org/), an implementation of the Message Passing Interface (MPI) standard distributed under a BSD-like license. Dynaωo-algorithms currently using the version 3.4.2.

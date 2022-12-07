@@ -15,8 +15,8 @@ Most of the classical approaches for long-term stability studies use simplified 
 
 **Our long-term stability simulation tool DynaWaltz uses a different paradigm. Instead of doing a priori simplifications or hypothesis on the modelling side, it is the numerical method that will take charge of filtering the fast dynamics while keeping as detailed models as necessary.** Thanks to an intensive research work conducted during the Pegase project on the numerical method and an important effort on the simulation tool itself, DynaWaltz manages to achieve simular simulation times than current long-term stability simulation tools.
 
-**DynaWaltz is the most advanced simulation tool of the Dyna&omega;o, initiative. It is operationnaly used on a daily basis in RTE national control center to deal with voltage stability issues.** In its operational use, DynaWaltz enables to launch individual simulation but also contingency analysis as well as  margin calculation thanks to the algorithms implemented and available into the [dynawo-algorithm repository](https://github.com/dynawo/dynawo-algorithms).
+**DynaWaltz is the most advanced simulation tool of the Dyna&omega;o, initiative. It is operationnaly used on a daily basis in RTE national control center to deal with voltage stability issues.** In its operational use, DynaWaltz enables to launch individual simulation but also contingency analysis as well as  margin calculation thanks to the algorithms implemented in [Dynawo-algorithms]({{ '/about/dynalgo' }}).
 
-For more details on DynaWaltz behavior, please have a look to [our use cases documentation](https://github.com/dynawo/dynawo/releases/download/v1.3.1/DynawoDocumentation.zip).
+For more details on DynaWaltz behavior, please have a look to [our use cases documentation](https://github.com/dynawo/dynawo/releases/download/v1.3.2/DynawoDocumentation.zip).
 
 ![image](../assets/images/DynaWaltz.png){: width="50%" .center-image}
