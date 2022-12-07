@@ -25,7 +25,18 @@
         {% assign current = null %}
       {% endif %}
       {% if entry.url != '/about' %}  
-        <li class="nav-item"><a class="nav-link{{ current }}" href="{{ entry.url }}">{{ entry.title }}</a></li>
+        {% if entry.url != '/install' %}  
+          <li class="nav-item"><a class="nav-link{{ current }}" href="{{ entry.url }}">{{ entry.title }}</a></li>
+        {% else %}
+          <li class="nav-item dropdown">
+            <a class="nav-link{{ current }} dropdown-toggle" href="{{ entry.url}}" role="button" aria-haspopup="true" aria-expanded="true">About</a>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="{{ '/install' }}">Dyna&omega;o</a>
+            <a class="dropdown-item" href="{{ '/install/dynalgo' }}">Dynawo-algorithms</a>
+            <a class="dropdown-item" href="{{ '/install/dfl' }}">Dynaflow-launcher</a>
+            </div>
+          </li>
+        {% endif%}
       {% else %}
         <li class="nav-item dropdown">
           <a class="nav-link{{ current }} dropdown-toggle" href="{{ entry.url}}" role="button" aria-haspopup="true" aria-expanded="true">About</a>
@@ -35,6 +46,8 @@
             <a class="dropdown-item" href="{{ '/about/dynawaltz' }}">DynaWaltz</a>
             <a class="dropdown-item" href="{{ '/about/dynaswing' }}">DynaSwing</a>
             <a class="dropdown-item" href="{{ '/about/dynawave' }}">DynaWave</a>
+            <a class="dropdown-item" href="{{ '/about/dynalgo' }}">Dynawo-algorithms</a>
+            <a class="dropdown-item" href="{{ '/about/dfl' }}">Dynaflow-launcher</a>
           </div>
         </li>
       {% endif%}

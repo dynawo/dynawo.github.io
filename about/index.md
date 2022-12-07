@@ -43,7 +43,10 @@ One important idea in Dyna&omega;o is that the same models could be used for dif
 ![image](../assets/images/DynawoLogos.png){: width="70%" .center-image}
 
 ![image](../assets/images/DynawoInitiative.png){: width="70%" .center-image}
-
 <p align="center"> High level vision of the Dyna&omega;o initiative </p>
+
+In addition two companions projects are provided:
+  - **[Dynawo-algorithms]({{ '/about/dynalgo' }})** that provides utility algorithms to calculate complex key values of a power system (e.g. contingency analysis, voltage margin)
+  - **[Dynaflow-launcher]({{ '/about/dfl' }})** to run DynaFlow with a minimal set of inputs
 
 More details on the philsophy of Dyna&omega;o can be found in our [publications]({{ '/publications' }}).
