@@ -8,6 +8,12 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
+<a name="V1.4.0Release"></a>
+
+#### New release (V1.4.0) available
+
+**A new release - V1.4.0 - is now available.**. This version notably contains improvements of Dynaflow modeling and optimizations of the margin calculation algorithm.
+
 <a name="V1.3.2Release"></a>
 
 #### New release (V1.3.2) available

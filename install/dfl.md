@@ -11,10 +11,10 @@ layout: default
 
 Dynaflow-launcher is available on **Linux**. For **MacOS** users we recommend to use [Docker](#docker).
 
-The latest release is [Dynaflow-launcher v1.3.2]({{ '/release_note' }}) and could be retrieved using the following links:
+The latest release is [Dynaflow-launcher v1.4.0]({{ '/release_note' }}) and could be retrieved using the following links:
 
 |---|---|
-| Linux distribution | [DynaFlowLauncher_Linux_v1.3.2.zip](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.3.2/DynaFlowLauncher_Linux_v1.3.2.zip) |
+| Linux distribution | [DynaFlowLauncher_Linux_v1.4.0.zip](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.4.0/DynaFlowLauncher_Linux_v1.4.0.zip) |
 | Windows distribution (VS2019) | Not available currently |
-| Documentation | [DynaflowLauncherDocumentation.pdf](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.3.2/DynaflowLauncherDocumentation.pdf) |
+| Documentation | [DynaflowLauncherDocumentation.pdf](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.4.0/DynaflowLauncherDocumentation.pdf) |
 

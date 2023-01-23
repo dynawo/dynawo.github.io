@@ -15,7 +15,7 @@ This calculation has been historically done by purely static simulation tool det
 
 **DynaFlow is a new steady-state simulation tool that aims at calculating the steady-state point by using a simplified time-domain simulation, guaranteeing the correctness of the solution found. In its current state, DynaFlow already covers a large range of the required features.**
 
-**[Our examples](https://github.com/dynawo/dynawo/releases/download/v1.3.2/DynawoDocumentation.zip) show the pros of this approach compared to a classical static approach and provides a concrete illustration of DynaFlow's possibilities.**
+**[Our examples](https://github.com/dynawo/dynawo/releases/download/v1.4.0/DynawoDocumentation.zip) show the pros of this approach compared to a classical static approach and provides a concrete illustration of DynaFlow's possibilities.**
 
 In addition, in order to ease the creation of input data and the usability of DynaFlow, a separate project called [DynaFlow-launcher](https://github.com/dynawo/dynaflow-launcher). It enables to create all the necessary files from a single iidm file, based on predefinite rules for each component.
 
