@@ -12,8 +12,8 @@ The documentation explains how to install Dyna&omega;o and its companion project
 
 For the moment only a PDF version of the documentations are available.
 
-Download [Dyna&omega;o documentation](https://github.com/dynawo/dynawo/releases/download/v1.4.0/DynawoDocumentation.zip).
+Download [Dyna&omega;o documentation](https://github.com/dynawo/dynawo/releases/download/v1.4.1/DynawoDocumentation.zip).
 
-Download [Dyna&omega;o-algorithms documentation](https://github.com/dynawo/dynawo-algorithms/releases/download/v1.4.0/DynawoAlgorithmsDocumentation.pdf).
+Download [Dyna&omega;o-algorithms documentation](https://github.com/dynawo/dynawo-algorithms/releases/download/v1.4.1/DynawoAlgorithmsDocumentation.pdf).
 
-Download [Dynaflow-launcher documentation](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.4.0/DynaflowLauncherDocumentation.pdf).
+Download [Dynaflow-launcher documentation](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.4.1/DynaflowLauncherDocumentation.pdf).

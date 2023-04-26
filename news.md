@@ -8,6 +8,18 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
+<a name="V1.4.1Release"></a>
+
+#### New release (V1.4.1) available
+
+**A new release - V1.4.1 - is now available.**. This version notably contains improvements of Dynaflow
+.
+<a name="DynawoInLFE"></a>
+
+#### Dynawo joined the Linux Foundation Energy (LFE)
+
+**Dynawo was accepted as a member of [LFE](https://www.lfenergy.org/)**. 
+
 <a name="V1.4.0Release"></a>
 
 #### New release (V1.4.0) available
