@@ -11,10 +11,10 @@ layout: default
 
 Dyna&omega;o-algorithms is available on **Linux**. For **MacOS** users we recommend to use [Docker](#docker).
 
-The latest release is [Dyna&omega;o-algorithms v1.4.0]({{ '/release_note' }}) and could be retrieved using the following links:
+The latest release is [Dyna&omega;o-algorithms v1.4.1]({{ '/release_note' }}) and could be retrieved using the following links:
 
 |---|---|
-| Linux distribution | [DynawoAlgorithms_Linux_v1.4.0.zip](https://github.com/dynawo/dynawo-algorithms/releases/download/v1.4.0/DynawoAlgorithms_Linux_v1.4.0.zip) |
+| Linux distribution | [DynawoAlgorithms_Linux_v1.4.1.zip](https://github.com/dynawo/dynawo-algorithms/releases/download/v1.4.1/DynawoAlgorithms_Linux_v1.4.1.zip) |
 | Windows distribution (VS2019) | Not available currently |
-| Documentation | [DynawoAlgorithmsDocumentation.pdf](https://github.com/dynawo/dynawo-algorithms/releases/download/v1.4.0/DynawoAlgorithmsDocumentation.pdf) |
+| Documentation | [DynawoAlgorithmsDocumentation.pdf](https://github.com/dynawo/dynawo-algorithms/releases/download/v1.4.1/DynawoAlgorithmsDocumentation.pdf) |
 
