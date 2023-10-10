@@ -8,11 +8,17 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
+<a name="V1.5.0Release"></a>
+
+#### New release (V1.5.0) available
+
+**A new release - V1.5.0 - is now available.**. This version notably contains the Windows release of Dynawo-algorithms and Dynaflow-launcher.
+
 <a name="V1.4.1Release"></a>
 
 #### New release (V1.4.1) available
 
-**A new release - V1.4.1 - is now available.**. This version notably contains improvements of Dynaflow
+**A new release - V1.4.1 - is now available.**. This version notably contains improvements of Dynaflow.
 .
 <a name="DynawoInLFE"></a>
 

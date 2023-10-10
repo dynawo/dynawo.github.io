@@ -10,14 +10,14 @@ layout: default
 -->
 
 Dyna&omega;o is available on **Linux** and **Windows**. For **MacOS** users we recommend to use [Docker](#docker).
-The latest release is [Dyna&omega;o v1.4.1]({{ '/release_note' }}) and could be retrieved using the following links:
+The latest release is [Dyna&omega;o v1.5.0]({{ '/release_note' }}) and could be retrieved using the following links:
 
 |---|---|
-| Linux distribution | [Dynawo_Linux_v1.4.1.zip](https://github.com/dynawo/dynawo/releases/download/v1.4.1/Dynawo_Linux_v1.4.1.zip) |
-| Windows distribution (VS2019) | [Dynawo_Windows_v1.4.1.zip](https://github.com/dynawo/dynawo/releases/download/v1.4.1/Dynawo_Windows_v1.4.1.zip) |
-| Documentation | [DynawoDocumentation.zip](https://github.com/dynawo/dynawo/releases/download/v1.4.1/DynawoDocumentation.zip) |
-| Dynawo Modelica library | [Dynawo_Modelica_library_v1.4.1.zip](https://github.com/dynawo/dynawo/releases/download/v1.4.1/Dynawo_Modelica_library_V1.4.1.zip) |
-| Detailed release note | [v1.4.1_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.4.1/v1.4.1_release_note.txt) |
+| Linux distribution | [Dynawo_Linux_v1.5.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.5.0/Dynawo_Linux_v1.5.0.zip) |
+| Windows distribution (VS2019) | [Dynawo_Windows_v1.5.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.5.0/Dynawo_Windows_v1.5.0.zip) |
+| Documentation | [DynawoDocumentation.zip](https://github.com/dynawo/dynawo/releases/download/v1.5.0/DynawoDocumentation.zip) |
+| Dynawo Modelica library | [Dynawo_Modelica_library_v1.5.0.zip](https://github.com/dynawo/dynawo/releases/download/v1.5.0/Dynawo_Modelica_library_V1.5.0.zip) |
+| Detailed release note | [v1.5.0_release_note.txt](https://github.com/dynawo/dynawo/releases/download/v1.5.0/v1.5.0_release_note.txt) |
 
 
 To get started with Dyna&omega;o you have different possibilities, depending on your background and what you want to do:
@@ -27,7 +27,7 @@ To get started with Dyna&omega;o you have different possibilities, depending on 
 
 ### Dyna&omega;o Linux binaries distribution
 
-Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.4.1/Dynawo_Linux_v1.4.1.zip).
+Official Linux-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.5.0/Dynawo_Linux_v1.5.0.zip).
 
 Dyna&omega;o is tested on **Fedora** and **Ubuntu** based platforms.
 However, provided that you can install system packages there should be no problem on others Linux distributions.
@@ -69,7 +69,7 @@ $> ./dynawo.sh jobs --help
 
 ### Dyna&omega;o Windows binaries distribution
 
-Official Windows-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.4.1/Dynawo_Windows_v1.4.1.zip).
+Official Windows-based release is available [here](https://github.com/dynawo/dynawo/releases/download/v1.5.0/Dynawo_Windows_v1.5.0.zip).
 
 Dyna&omega;o is tested on **Windows 10**.
 
