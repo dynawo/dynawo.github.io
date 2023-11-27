@@ -65,8 +65,8 @@ Some other variables are even more optional and can be defined by the user in so
 |DYNAWO_ADEPT_DOWNLOAD_URL|Url to a repository containing a Adept archive (named *adept-2.1.1.tar.gz*).|Default [http://www.met.reading.ac.uk/clouds/adept](http://www.met.reading.ac.uk/clouds/adept)|
 |DYNAWO_MODELICA_GIT_URL|Url to a git repository of Modelica Standard Library.|Default [https://github.com/modelica/ModelicaStandardLibrary.git](https://github.com/modelica/ModelicaStandardLibrary.git)|
 |DYNAWO_OPENMODELICA_GIT_URL|Url to a git repository of OpenModelica.|Default [https://openmodelica.org/git-readonly/OpenModelica.git](https://openmodelica.org/git-readonly/OpenModelica.git)|
-|DYNAWO_SUITE_SPARSE_DOWNLOAD_URL|Url to a repository containing a SuiteSparse archive (named *SuiteSparse-4.5.4.tar.gz*).|Default [http://faculty.cse.tamu.edu/davis/SuiteSparse](http://faculty.cse.tamu.edu/davis/SuiteSparse)|
-|DYNAWO_SUNDIALS_DOWNLOAD_URL|Url to a repository containing a Sundials archive (named *sundials-4.1.0.tar.gz*).|Default [https://computation.llnl.gov/projects/sundials/download](https://computation.llnl.gov/projects/sundials/download)|
+|DYNAWO_SUITE_SPARSE_DOWNLOAD_URL|Url to a repository containing a SuiteSparse archive (named *SuiteSparse-5.10.1.tar.gz*).|Default [http://faculty.cse.tamu.edu/davis/SuiteSparse](http://faculty.cse.tamu.edu/davis/SuiteSparse)|
+|DYNAWO_SUNDIALS_DOWNLOAD_URL|Url to a repository containing a Sundials archive (named *sundials-6.3.0.tar.gz*).|Default [https://computation.llnl.gov/projects/sundials/download](https://computation.llnl.gov/projects/sundials/download)|
 |DYNAWO_XERCESC_DOWNLOAD_URL|Url to a repository containing a Xerces-C++ archive (named *xerces-c-3.2.2.tar.gz*).|Default [http://archive.apache.org/dist/xerces/c/3/sources](http://archive.apache.org/dist/xerces/c/3/sources)|
 
 # Custom install of system libraries
