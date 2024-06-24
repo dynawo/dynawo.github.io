@@ -62,7 +62,7 @@ Following commands can be used to download and test the latest distribution:
 $> curl -L $(curl -s -L -X GET https://api.github.com/repos/dynawo/dynawo/releases/latest | grep "Dynawo_Linux" | grep url | cut -d '"' -f 4) -o Dynawo_Linux_latest.zip
 $> unzip Dynawo_Linux_latest.zip
 $> cd dynawo
-$> ./dynawo.sh jobs-with-curves sources/examples/DynaWaltz/IEEE14/IEEE14_GeneratorDisconnections/IEEE14.jobs
+$> ./dynawo.sh jobs-with-curves examples/DynaWaltz/IEEE14/IEEE14_GeneratorDisconnections/IEEE14.jobs
 $> ./dynawo.sh help
 $> ./dynawo.sh jobs --help
 ```
