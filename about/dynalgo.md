@@ -9,12 +9,12 @@ layout: default
     license. All rights reserved.
 -->
 
-Dyna&omega;o-algorithms is a wrapper around  Dyna&omega;o that provides utility algorithms to calculate complex key values of a power system.
+Dyna&omega;o-algorithms is a wrapper around Dyna&omega;o that provides utility algorithms to calculate complex key values of a power system.
 
 It can be used with any tool of the Dyna&omega;o toolsuite (DynaFlow, DynaWaltz, DynaSwing, DySym, DynaWave).
 
 It provides the following possibilities:
-  - **Systematic analysis**: simulations of a same base power system subject to different events to assess the global stability
+  - **Systematic analysis**: simulations of a same base power system subject to different events to assess the global stability;
   - **Margin calculation**: simulations of a same base power system with a load variation and subject to different events to compute 
   the maximum load increase in a specific region before the voltage collapses;
   - **Load increase**: simulation of a single load variation.

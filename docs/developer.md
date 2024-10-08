@@ -1,5 +1,5 @@
 ---
-title: Documentation Developper
+title: Documentation Developer
 layout: default
 ---
 <!--

@@ -15,7 +15,7 @@ layout: default
 
 * Creation of an example directory with additional test cases
 * Steady-state calculation models release (restorative load, generators, frequency regulation model - Signal N-, HVDCPTanPhi and HVDCPV)
-* Performance improvement up to 20 % on large-scale simulations (variables simplification, algorithm optimization and implementation improvements).
+* Performance improvement up to 20 % on large-scale simulations (variables simplification, algorithm optimization and implementation improvements)
 * Modeling robustness (handling bad topology, propagation of disconnection signals, data handling improvement)
 
 **New features:**
@@ -26,7 +26,7 @@ layout: default
 **New models:**
 
 * HVDC Standard model
-* Shackshaft  saturation model
+* Shackshaft saturation model
 * Steady-state models
 
 **3rd Party:**
@@ -38,5 +38,5 @@ layout: default
 **Test cases:**
 
 * Full OM grid forming converter and HVDC test cases (in the examples package of the Dynawo library)
-* Examples section in Dynawo (Steady-state calculation examples - DynaFlow, long-term stability examples - DynaWaltz, transient stability examples - DynaSwing).
+* Examples section in Dynawo (Steady-state calculation examples - DynaFlow, long-term stability examples - DynaWaltz, transient stability examples - DynaSwing)
 
