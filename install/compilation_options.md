@@ -37,7 +37,7 @@ Below is a list of variables that are optional to define in `myEnvDynawo.sh`. Us
 |DYNAWO_BROWSER|Define your default browser command.|firefox (default) or other|
 |DYNAWO_PDFVIEWER|Define your default pdf viewer command.|xdg-open (default) or other (evince)|
 |DYNAWO_RESULTS_SHOW|Should browser open at the end of simulation or tests coverage.|true (default) or false|
-|DYNAWO_LOCALE|Enables to create a different local language for dictionaries.|en_GB|
+|DYNAWO_LOCALE|Enable to create a different local language for dictionaries.|en_GB|
 |DYNAWO_COMPILER|Choose compiler|GCC (default) or CLANG|
 |DYNAWO_PYTHON_COMMAND|`python` commands needs to be in PATH, use this variable to use a different version.|python (default) or python3|
 |DYNAWO_LIBARCHIVE_HOME|Path to a custom install of libarchive.|PATH (default is system one)|
@@ -49,7 +49,7 @@ For `DYNAWO_LOCALE` only `en_GB` is available for the moment and the user would 
 
 # Optional optional variables
 
-Some other variables are even more optional and can be defined by the user in some very particular cases. **We recommend to let `util/envDynawo.sh` defines those variables but if you do export them beware of the consequences.**
+Some other variables are even more optional and can be defined by the user in some very particular cases. **We recommend to let `util/envDynawo.sh` define those variables but if you do export them, beware of the consequences.**
 
 |Variable|Description|Value|
 |---------|-----------|-----------|
@@ -71,7 +71,7 @@ Some other variables are even more optional and can be defined by the user in so
 
 # Custom install of system libraries
 
-Some system libraries that should be installed through a package manager (**dnf** or **apt** for example) can be installed from source and used to compile Dyna&omega;o against them. **We don't recommend to do this on recent OS** but this procedure have been tested on Centos6.4 with success. Below we provide small scripts to download and compile a **Release** or **Debug** version of those libraries. All downloads and builds will be done in the directory where you create the scripts (ie execute the first command).
+Some system libraries that should be installed through a package manager (**dnf** or **apt** for example) can be installed from source and used to compile Dyna&omega;o against them. **We don't recommend to do this on recent OS** but this procedure has been tested on Centos6.4 with success. Below we provide small scripts to download and compile a **Release** or **Debug** version of those libraries. All downloads and builds will be done in the directory where you create the scripts (i.e. execute the first command).
 
 ## Lcov
 

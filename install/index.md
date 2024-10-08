@@ -21,7 +21,7 @@ The latest release is [Dyna&omega;o v1.6.0]({{ '/release_note' }}) and could be 
 
 
 To get started with Dyna&omega;o you have different possibilities, depending on your background and what you want to do:
-- If you are interested in the models available and want to have a quick look to them, please open the Dyna&omega;o Modelica library in OpenModelica for example.
+- If you are interested in the models available and want to have a quick look at them, please open the Dyna&omega;o Modelica library in OpenModelica for example.
 - If you want to launch simulations and examples with Dyna&omega;o and observe the performances, you can use the pre-built distributions and the examples directory.
 - If you want to checkout the repository and build it yourself to be able to modify the tool, please follow the build instructions available.
 
@@ -175,9 +175,9 @@ It is also possible to display directly simulation results - plots - into a simp
 $> ./myEnvDynawo.sh jobs-with-curves examples/DynaWaltz/IEEE14/IEEE14_GeneratorDisconnections/IEEE14.jobs
 ```
 
-For example, for the generator disconnections simulated with DynaWaltz, the plot for the voltage module in p.u. on bus 1 should look like this:
+For example, for the generator disconnections simulated with DynaWaltz, the plot for the voltage module in pu on bus 1 should look like this:
 
-![image](../assets/images/VoltageModule.png "Voltage module in p.u. on bus 10"){: .center-image}
+![image](../assets/images/VoltageModule.png "Voltage module in pu on bus 10"){: .center-image}
 
 You can obtain more informations about commands you can use by launching:
 ``` bash

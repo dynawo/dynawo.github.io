@@ -8,9 +8,9 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
-The documentation explains how to install Dyna&omega;o and its companion projects, how to configure it to simulate a given test case, gives more details on the model library and the solvers included into the simulation tool and introduces more advanced features such as adding a new Modelica model to the library.
+The documentation explains how to install Dyna&omega;o and its companion projects, how to configure it to simulate a given test case, gives more details on the models library and the solvers included into the simulation tool and introduces more advanced features such as adding a new Modelica model to the library.
 
-For the moment only a PDF version of the documentations are available.
+For the moment, the documentations are available only as PDF files.
 
 Download [Dyna&omega;o documentation](https://github.com/dynawo/dynawo/releases/download/v1.6.0/DynawoDocumentation.zip).
 

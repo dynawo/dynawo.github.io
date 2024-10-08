@@ -12,8 +12,8 @@ layout: default
 Dynaflow-launcher is a utility tool used to easily run [DynaFlow]({{ '/about/dynaflow' }}) starting from a minimal set of inputs.
 
 It provides the following possibilities:
-  - **Unitary simulations**: computation of the steady-state solution on a given network (IIDM format) with Dynaflow
-  - **Systematic analysis**: assessment of the stability of a single base network subject to different events
+  - **Unitary simulations**: computation of the steady-state solution on a given network (IIDM format) with DynaFlow;
+  - **Systematic analysis**: assessment of the stability of a single base network subject to different events.
 
 More information is available on the [Github repository](https://github.com/dynawo/dynaflow-launcher) or in the [Dynaflow-launcher documentation](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.6.0/DynaflowLauncherDocumentation.pdf).
 

@@ -12,7 +12,7 @@ layout: default
 
 #### New release (V1.6.0) available
 
-**A new release - V1.6.0 - is now available.**. This version notably contains improvements of models and the addition of new testcases.
+**A new release - V1.6.0 - is now available.**. This version notably contains improvements of models and the addition of new test cases.
 
 <a name="V1.5.0Release"></a>
 
@@ -24,7 +24,7 @@ layout: default
 
 #### New release (V1.4.1) available
 
-**A new release - V1.4.1 - is now available.**. This version notably contains improvements of Dynaflow.
+**A new release - V1.4.1 - is now available.**. This version notably contains improvements of DynaFlow.
 .
 <a name="DynawoInLFE"></a>
 
@@ -36,7 +36,7 @@ layout: default
 
 #### New release (V1.4.0) available
 
-**A new release - V1.4.0 - is now available.**. This version notably contains improvements of Dynaflow modeling and optimizations of the margin calculation algorithm.
+**A new release - V1.4.0 - is now available.**. This version notably contains improvements of DynaFlow modeling and optimizations of the margin calculation algorithm.
 
 <a name="V1.3.2Release"></a>
 
@@ -54,7 +54,7 @@ layout: default
 
 #### Operational use in French control centers
 
-**DynaWaltz, the tool for long-term stability studies of the Dyna&omega;o suite, is now available operationally in the French control centers**. Integrated into RTE's ernergy management system, it has been used to conduct previsional studies for voltage stability before the winter as well as for some day to day studies. The tool behavior has been very satisfactory with an improved accuracy leading to an increase in the operational margins and similar performances than RTE's historical tool. It is an important step for the project, paving the way for the operational adoption of the approach.
+**DynaWaltz, the tool for long-term stability studies of the Dyna&omega;o suite, is now available operationally in the French control centers**. Integrated into RTE's ernergy management system, it has been used to conduct previsional studies for voltage stability before the winter as well as for some day to day studies. The tool behavior has been very satisfactory with an improved accuracy leading to an increase in the operational margins and similar performances to RTE's historical tool. It is an important step for the project, paving the way for the operational adoption of the approach.
 
 <a name="V1.3.0Release"></a>
 
@@ -66,4 +66,4 @@ layout: default
 
 #### Companion Projects
 
-**An important work has been done to create a more complete environment around Dyna&omega;o**. It notably implied the development of a [launcher for dynaflow](https://github.com/dynawo/dynaflow-launcher), the [release open-source](https://github.com/dynawo/dynawo-algorithms) of contingency analysis or margin calculation algorithms as well as first efforts to link the [PowSyBl and Dyna&omega;o efforts](https://github.com/powsybl/powsybl-dynawo). Additional functionalities, such as critical clearing time analysis, are under developement and should be available in a few weeks. Don't hesitate to have a look to these companion projects!
+**An important work has been done to create a more complete environment around Dyna&omega;o**. It notably implied the development of a [launcher for dynaflow](https://github.com/dynawo/dynaflow-launcher), the [release open-source](https://github.com/dynawo/dynawo-algorithms) of contingency analysis or margin calculation algorithms as well as first efforts to link the [PowSyBl and Dyna&omega;o efforts](https://github.com/powsybl/powsybl-dynawo). Additional functionalities, such as critical clearing time analysis, are under development and should be available in a few weeks. Don't hesitate to have a look at these companion projects!
