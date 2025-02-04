@@ -11,7 +11,7 @@ layout: default
 
 ![image](assets/images/Dynawo-Logo-Color.png){: width="70%" .center-image}
 
-**Dyna&omega;o is an hybrid C++/Modelica open source suite of simulation tools for power systems. It aims at providing power system stakeholders with a transparent, flexible, interoperable and robust suite of simulation tools that could ease collaboration and cooperation in the power system community.**
+**Dyna&omega;o is a hybrid C++/Modelica open source suite of simulation tools for power systems. It aims at providing power system stakeholders with a transparent, flexible, interoperable and robust suite of simulation tools that could ease collaboration and cooperation in the power system community.**
 
 To achieve this goal, **Dyna&omega;o is based on two main principles**: the use of a high-level modelling language [Modelica](https://modelica.org/) and a strict separation between the modelling and the solving parts. 
 
