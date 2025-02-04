@@ -11,7 +11,7 @@ layout: default
 
 ![image](assets/images/Dynawo-Logo-Color.png){: width="70%" .center-image}
 
-**Dyna&omega;o is an hybrid C++/Modelica open source suite of simulation tools for power systems. It aims at providing power system stakeholders with a transparent, flexible, interoperable and robust suite of simulation tools that could ease collaboration and cooperation in the power system community.**
+**Dyna&omega;o is a hybrid C++/Modelica open source suite of simulation tools for power systems. It aims at providing power system stakeholders with a transparent, flexible, interoperable and robust suite of simulation tools that could ease collaboration and cooperation in the power system community.**
 
 To achieve this goal, **Dyna&omega;o is based on two main principles**: the use of a high-level modelling language [Modelica](https://modelica.org/) and a strict separation between the modelling and the solving parts. 
 
@@ -19,7 +19,7 @@ It is an ongoing project based on previous works conducted particularly in two R
 
 ![image](assets/images/DynawoModelSolverLight.png){: width="70%" .center-image}
 
-**Dyna&omega;o 's primary focus has been on long-term and short-term stability studies** but the very encouraging results obtained and the flexibility of the approach led to **an extension of the initiative. Dyna&omega;o is now evolving towards a complete and coherent suite of simulation tools**, sharing the same philosophy:
+**Dyna&omega;o's primary focus has been on long-term and short-term stability studies** but the very encouraging results obtained and the flexibility of the approach led to **an extension of the initiative. Dyna&omega;o is now evolving towards a complete and coherent suite of simulation tools**, sharing the same philosophy:
   - **[DynaFlow]({{ '/about/dynaflow' }})** for steady-state calculations
   - **[DySym]({{ '/about/dysym' }})** for short-circuit calculations
   - **[DynaWaltz]({{ '/about/dynawaltz' }})** for long-term stability simulations

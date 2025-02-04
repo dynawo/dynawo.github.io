@@ -33,7 +33,7 @@ To ensure acceptable performances both for compilation and simulation, a mechani
 
 One important idea in Dyna&omega;o is that the same models could be used for different stability studies. It is the overall association between the different models and the selected solving strategy that enables to run a specific stability study. For example, short-term stability studies and long-term stability studies share a large common set of models but use different solving strategies. Indeed, short-term stability studies are simulated using the IDA solver which manages to capture the fast dynamics while long-term stability studies are done with the simplified solver that approximates the fast dynamics but enables to study the system long-term behavior with very good simulation times.
 
-**Dyna&omega;o 's primary focus has been on long-term and short-term stability studies** but the very encouraging results obtained and the flexibility of the approach led to **an extension of the initiative. Dyna&omega;o is now evolving towards a complete and coherent suite of simulation tools**, sharing the same philosophy:
+**Dyna&omega;o's primary focus has been on long-term and short-term stability studies** but the very encouraging results obtained and the flexibility of the approach led to **an extension of the initiative. Dyna&omega;o is now evolving towards a complete and coherent suite of simulation tools**, sharing the same philosophy:
   - **[DynaFlow]({{ '/about/dynaflow' }})** for steady-state calculations
   - **[DySym]({{ '/about/dysym' }})** for short-circuit calculations
   - **[DynaWaltz]({{ '/about/dynawaltz' }})** for long-term stability simulations
@@ -49,4 +49,4 @@ In addition two companion projects are provided:
   - **[Dynawo-algorithms]({{ '/about/dynalgo' }})** that provides utility algorithms to calculate complex key values of a power system (e.g. contingency analysis, voltage margin)
   - **[Dynaflow-launcher]({{ '/about/dfl' }})** to run DynaFlow with a minimal set of inputs
 
-More details on the philsophy of Dyna&omega;o can be found in our [publications]({{ '/publications' }}).
+More details on the philosophy of Dyna&omega;o can be found in our [publications]({{ '/publications' }}).
