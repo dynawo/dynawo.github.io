@@ -15,7 +15,7 @@ To properly represent the system response in the few instants following an event
 
 **DynaSwing is a simulation tool that offers an unique combination of a transparent, flexible and robust way of modelling - thanks to the intensive use of the Modelica language - and a state-of-the-art, efficient and accurate numerical method (the variable time-step solver IDA).**
 
-**The core of the tool has already reached a mature state, making it usable for running transient stability studies, as visible in [our use cases documentation](https://github.com/dynawo/dynawo/releases/download/v1.6.0/DynawoDocumentation.zip)** The future work will thus concentrate on:
+**The core of the tool has already reached a mature state, making it usable for running transient stability studies, as visible in [our use cases documentation](https://github.com/dynawo/dynawo/releases/download/v1.7.0/DynawoDocumentation.zip)** The future work will thus concentrate on:
 - the development of more elaborated regulation controls (PSS, specific governors or voltage regulators);
 - the addition of new models (especially standard PV and wind models);
 - the improvement of the numerical method on large test cases (especially on systems containing a lot of digital controllers).

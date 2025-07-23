@@ -15,3 +15,6 @@ github:
 
 plugins:
 - jekyll-relative-links
+
+exclude:
+- ruby/*
