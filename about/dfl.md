@@ -15,6 +15,6 @@ It provides the following possibilities:
   - **Unitary simulations**: computation of the steady-state solution on a given network (IIDM format) with DynaFlow;
   - **Systematic analysis**: assessment of the stability of a single base network subject to different events.
 
-More information is available on the [Github repository](https://github.com/dynawo/dynaflow-launcher) or in the [Dynaflow-launcher documentation](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.6.0/DynaflowLauncherDocumentation.pdf).
+More information is available on the [Github repository](https://github.com/dynawo/dynaflow-launcher) or in the [Dynaflow-launcher documentation](https://github.com/dynawo/dynaflow-launcher/releases/download/v1.7.0/DynaflowLauncherDocumentation.pdf).
 
 ![image](../assets/images/DynaflowLauncher.png){: width="50%" .center-image}

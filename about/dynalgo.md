@@ -19,6 +19,6 @@ It provides the following possibilities:
   the maximum load increase in a specific region before the voltage collapses;
   - **Load increase**: simulation of a single load variation.
 
-More information is available on the [Github repository](https://github.com/dynawo/dynawo-algorithms) or in the [Dyna&omega;o-algorithms documentation](https://github.com/dynawo/dynawo-algorithms/releases/download/v1.6.0/DynawoAlgorithmsDocumentation.pdf).
+More information is available on the [Github repository](https://github.com/dynawo/dynawo-algorithms) or in the [Dyna&omega;o-algorithms documentation](https://github.com/dynawo/dynawo-algorithms/releases/download/v1.7.0/DynawoAlgorithmsDocumentation.pdf).
 
 ![image](../assets/images/DynawoAlgorithms.png){: width="50%" .center-image}

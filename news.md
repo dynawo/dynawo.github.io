@@ -8,6 +8,12 @@ layout: default
     CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
     license. All rights reserved.
 -->
+<a name="V1.7.0Release"></a>
+
+#### New release (V1.7.0) available
+
+**A new release - V1.7.0 - is now available.**.
+
 <a name="V1.6.0Release"></a>
 
 #### New release (V1.6.0) available
