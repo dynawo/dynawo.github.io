@@ -1,6 +1,2 @@
-# Jekyll generated directory
-_site
-.sass-cache
-Gemfile.lock
-.gitignore_local
-util
+node_modules/
+dist/
