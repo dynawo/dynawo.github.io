@@ -4,7 +4,7 @@ Landing page for the [Dynawo](https://dynawo.github.io) open source project, bui
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) v16 or later
+- [Node.js](https://nodejs.org/) v20 or later
 - npm (bundled with Node.js)
 
 ## Install dependencies
