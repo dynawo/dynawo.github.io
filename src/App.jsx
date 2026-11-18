@@ -474,7 +474,7 @@ function Header() {
           <a href="/" className="opacity-75 transition-opacity hover:opacity-100 cursor-pointer">Home</a>
           <NavDropdown label="Overview" items={overviewMenu} />
           <NavDropdown label="Tools" items={toolsMenu} />
-          <a href={DOCUMENTATION_PDF_URL} target="_blank" rel="noopener noreferrer" className="opacity-75 transition-opacity hover:opacity-100 cursor-pointer">Documentation</a>
+          <a href={DOCUMENTATION_PDF_URL} target="_blank" rel="noopener noreferrer" className="opacity-75 transition-opacity hover:opacity-100 cursor-pointer">Documentation (PDF)</a>
           <NavDropdown label="Contributing" items={contributingMenu} />
           <NavDropdown label="About" items={aboutMenu} />
         </nav>
@@ -571,7 +571,10 @@ function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5 text-xs text-white/35">
-          <span>© RTE 2025 — All rights reserved</span>
+          <p>
+            Copyright © Dynaωo a Series of LF Projects, LLC. For web site terms of use, trademark policy and other project policies please see{" "}
+            <a href="https://lfprojects.org" target="_blank" rel="noopener noreferrer" className="underline transition hover:text-white">lfprojects.org</a>.
+          </p>
         </div>
       </div>
     </footer>
@@ -626,7 +629,7 @@ function LandingPage() {
                   Get started <ArrowRight size={18} />
                 </Link>
                 <a href={DOCUMENTATION_PDF_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 rounded-lg border border-[#002B5C]/20 bg-white px-7 py-3.5 font-bold text-[#002B5C] transition hover:border-[#002B5C]/40">
-                  <BookOpen size={18} /> Documentation
+                  <BookOpen size={18} /> Documentation (PDF)
                 </a>
               </div>
             </div>
@@ -732,10 +735,10 @@ function LandingPage() {
               </div>
 
               {/* Arrow + tools */}
-              <div className="border-t border-slate-100 bg-slate-50 px-8 py-6">
-                {/* Stem */}
+              <div className="border-t border-slate-100 bg-slate-50 px-8 pt-0 pb-6">
+                {/* Stem: starts right at the top border, joining the concepts above */}
                 <div className="flex justify-center" aria-hidden="true">
-                  <div className="w-0.5 h-4 bg-[#00A3E0]" />
+                  <div className="w-0.5 h-6 bg-[#00A3E0]" />
                 </div>
                 {/* Rake + cards: unified grid so branches land on card centers */}
                 <div className="relative grid grid-cols-6 gap-3" aria-hidden="true">
@@ -805,8 +808,6 @@ function LandingPage() {
 
 
       </main>
-
-      <Footer />
     </div>
   );
 }
@@ -834,6 +835,7 @@ function Layout({ children }) {
       <ScrollToHash />
       <Header />
       {children}
+      <Footer />
     </div>
   );
 }

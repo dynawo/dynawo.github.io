@@ -190,16 +190,16 @@ export default function CodeOfConductPage() {
           <h2 className="mb-6 text-xl font-extrabold text-[#002B5C]">Next steps</h2>
           <div className="flex flex-wrap gap-3">
             <Link
-              to="/contributing/how-to-contribute"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-[#002B5C] shadow-sm hover:border-[#00A3E0] hover:text-[#00A3E0] transition"
-            >
-              How to contribute →
-            </Link>
-            <Link
               to="/contributing/development-setup"
               className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-[#002B5C] shadow-sm hover:border-[#00A3E0] hover:text-[#00A3E0] transition"
             >
-              Development setup →
+              ← Development setup
+            </Link>
+            <Link
+              to="/contributing/how-to-contribute"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-[#002B5C] shadow-sm hover:border-[#00A3E0] hover:text-[#00A3E0] transition"
+            >
+              ← How to contribute
             </Link>
           </div>
         </section>
