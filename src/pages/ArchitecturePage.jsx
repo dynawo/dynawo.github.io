@@ -158,6 +158,7 @@ export default function ArchitecturePage() {
                   </div>
                 ))}
               </div>
+              <p className="mt-2 text-[11px] font-extrabold uppercase tracking-widest text-slate-400">Outputs</p>
             </div>
 
           </div>
