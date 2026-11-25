@@ -97,19 +97,14 @@ export default function DevelopmentSetupPage() {
             Install all dependencies at once with your distribution's package manager.
           </p>
 
-          <p className="mb-1.5 text-[11px] font-extrabold uppercase tracking-widest text-slate-400">Ubuntu 22.04</p>
+          <p className="mb-1.5 text-[11px] font-extrabold uppercase tracking-widest text-slate-400">Ubuntu 22.04 and later</p>
           <pre className="mb-5 overflow-x-auto rounded-xl bg-[#0f172a] px-5 py-4 text-[12px] leading-6 text-slate-200 whitespace-pre-wrap">
-            <code>{`apt install -y git gcc g++ gfortran autoconf pkgconf automake make libtool cmake hwloc openjdk-8-jdk libblas-dev liblpsolve55-dev libarchive-dev doxygen doxygen-latex liblapack-dev libexpat1-dev libsqlite3-dev zlib1g-dev gettext patch clang python3-pip libncurses5-dev libreadline-dev libdigest-perl-md5-perl unzip gcovr lcov libboost-all-dev lsb-release libxml2-utils python3-lxml python3-psutil wget libcurl4-openssl-dev rsync libopenblas-openmp-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools`}</code>
-          </pre>
-
-          <p className="mb-1.5 text-[11px] font-extrabold uppercase tracking-widest text-slate-400">Ubuntu 20.04</p>
-          <pre className="mb-5 overflow-x-auto rounded-xl bg-[#0f172a] px-5 py-4 text-[12px] leading-6 text-slate-200 whitespace-pre-wrap">
-            <code>{`apt install -y git gcc g++ gfortran autoconf pkgconf automake make libtool cmake hwloc openjdk-8-jdk libblas-dev liblpsolve55-dev libarchive-dev doxygen doxygen-latex liblapack-dev libexpat1-dev libsqlite3-dev zlib1g-dev gettext patch clang python3-pip libncurses5-dev libreadline-dev libdigest-perl-md5-perl unzip gcovr lcov libboost-all-dev qt5-default lsb-release libxml2-utils python-lxml python-psutil wget libcurl4-openssl-dev rsync libopenblas-openmp-dev`}</code>
+            <code>{`apt install -y git gcc g++ gfortran autoconf pkgconf automake make libtool cmake hwloc openjdk-8-jdk libblas-dev liblpsolve55-dev libarchive-dev doxygen doxygen-latex liblapack-dev libexpat1-dev libsqlite3-dev zlib1g-dev gettext patch clang python3-pip libncurses5-dev libreadline-dev libdigest-perl-md5-perl unzip gcovr lcov libboost-all-dev lsb-release libxml2-utils python3-lxml python3-psutil wget libcurl4-openssl-dev rsync libopenblas-openmp-dev`}</code>
           </pre>
 
           <p className="mb-1.5 text-[11px] font-extrabold uppercase tracking-widest text-slate-400">Fedora</p>
           <pre className="mb-8 overflow-x-auto rounded-xl bg-[#0f172a] px-5 py-4 text-[12px] leading-6 text-slate-200 whitespace-pre-wrap">
-            <code>{`dnf install -y git gcc gcc-c++ gcc-gfortran autoconf automake make libtool cmake hwloc java-1.8.0-openjdk-devel blas-devel lapack-devel lpsolve-devel expat-devel glibc-devel sqlite-devel libarchive-devel zlib-devel doxygen doxygen-latex qt-devel gettext patch wget python-devel clang llvm-devel ncurses-devel readline-devel unzip perl-Digest-MD5 vim gcovr python-pip python-psutil boost-devel lcov gtest-devel gmock-devel xz rsync python-lxml graphviz libcurl-devel bash-completion`}</code>
+            <code>{`dnf install -y git gcc gcc-c++ gcc-gfortran autoconf automake make libtool cmake hwloc java-1.8.0-openjdk-devel blas-devel lapack-devel lpsolve-devel expat-devel glibc-devel sqlite-devel libarchive-devel zlib-devel doxygen doxygen-latex gettext patch wget python3-devel clang llvm-devel ncurses-devel readline-devel unzip perl-Digest-MD5 vim gcovr python3-pip python3-psutil boost-devel lcov gtest-devel gmock-devel xz rsync python3-lxml graphviz libcurl-devel bash-completion`}</code>
           </pre>
 
           {/* Clone + create myEnvDynawo */}
@@ -190,7 +185,7 @@ chmod +x myEnvDynawo.sh`}</code>
               { name: "Visual Studio 2022", note: "Visual Studio 2019 also works. Required for the C++ compiler." },
               { name: "CMake", note: "Build system generator." },
               { name: "Java (OpenJDK)", note: "Required to build the OpenModelica compiler." },
-              { name: "Python 2 or Python 3", note: "python must be in PATH, or set DYNAWO_PYTHON_COMMAND." },
+              { name: "Python 3", note: "python must be in PATH, or set DYNAWO_PYTHON_COMMAND." },
             ].map((r) => (
               <div key={r.name} className="rounded-xl border border-blue-100 bg-blue-50 p-4">
                 <p className="mb-1 text-sm font-extrabold text-blue-600">{r.name}</p>

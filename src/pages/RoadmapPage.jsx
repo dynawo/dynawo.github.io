@@ -181,8 +181,9 @@ const axes = [
       },
       {
         title: "OpenModelica 1.24",
-        status: "in_progress",
-        detail: "Upgrade of the Modelica compilation chain to OpenModelica 1.24.4.",
+        status: "done",
+        since: "v2.0.0",
+        detail: "Upgrade of the Modelica compilation chain from OpenModelica 1.13.2 to OpenModelica 1.24.5.",
       },
       {
         title: "On-the-fly reconnection",
